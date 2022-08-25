@@ -1,0 +1,12 @@
+geo_angle_i : 2.0943951023931953 #1.8325957145940461
+frame_the_box : False
+nphi : 480
+voxels_nGamma_cells : 474
+voxels_z_min : -100.0 #km/s
+voxelling_mode : Voxel #
+voxelling_method : 'railgun'     # bazooka
+voxelling_scheme : 'progressive' # brute
+input_file_vtk :  "./Jet_CC_0007.vtu" #"./Jet_CC_Shang06_0296.vtu"
+output_file_vtk: "./PVi120degnPhi480t1e4yrs_fism1v00_fjet1v00"
+threshold_f_ism : 1.00
+threshold_f_jet : 1.00

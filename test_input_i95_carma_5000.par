@@ -1,0 +1,13 @@
+geo_angle_i : 1.6580627893946132
+frame_the_box : False
+nphi : 480
+voxels_dz : 1.0
+voxels_nGamma_cells : 474
+voxels_z_min : -100.0 #km/s
+voxelling_mode : Voxel #
+voxelling_method : 'railgun'     # bazooka
+voxelling_scheme : 'progressive' # brute
+input_file_vtk :  "./Jet_CC_0050.vtu"
+output_file_vtk: "./Carmai95dgnP480t5e3yrs_P31yrs_fi0v995_fj0v995_dz_1v0kps"
+threshold_f_ism : 0.995
+threshold_f_jet : 0.995

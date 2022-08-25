@@ -1,0 +1,16 @@
+geo_angle_i : 2.0943951023931953 #1.5707963267948966
+frame_the_box : False
+nphi : 4
+voxels_z_min : -100.0 #km/s
+voxels_nGamma_cells : 50
+voxelling_mode : Voxel #
+voxelling_method : 'bazooka' #'railgun'     # bazooka
+voxelling_scheme : 'brute'   #'progressive' # brute
+input_file_vtk :  "./Jet_CC_Shang06_0296.vtu" #"./Jet_CC_Shang06_0296.vtu"
+output_file_vtk : "./finale_f3"
+threshold_f_ism : 0.25
+threshold_f_jet : 0.25
+rho_ism_fac : 1.0
+#output_impulsion_ascii : "./Lee2001_us_115_yrs_flow_rates.dat"
+#flux_surface_center : [[0,1.66e+15,0],[0,2.2e+15,0],[0,2.8e+15,0],[0,3.4e+15,0],[0,3.9e+15,0],[0,4.5e+15,0],[0,5.0e+15,0]]
+#flux_surface_r_z_inclination : [[2.51e+15,0.0],[2.51e+15,0.0],[2.51e+15,0.0],[2.51e+15,0.0],[2.51e+15,0.0],[2.51e+15,0.0],[2.51e+15,0.0]]

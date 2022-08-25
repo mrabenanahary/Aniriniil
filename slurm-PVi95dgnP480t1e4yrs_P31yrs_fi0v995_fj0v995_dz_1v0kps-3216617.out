@@ -1,0 +1,18 @@
+/bin/cp: cannot stat '/obs/mrabenanahary/Post-Traitement/geoCompiler_v2/test_input_i95_MV.par': No such file or directory
+srun: error: tycho65: task 0: Exited with exit code 1
+/bin/cp: cannot stat '/obs/mrabenanahary/Post-Traitement/geoCompiler_v2/*.py'srun: error: tycho65: task 0: Exited with exit code 1
+: No such file or directory
+/bin/cp: cannot stat '/obs/mrabenanahary/Post-Traitement/geoCompiler_v2/Jet_CC_Shang06_0296.vtu': No such file or directory
+srun: error: tycho65: task 0: Exited with exit code 1
+srun: error: tycho65: task 0: Exited with exit code 1
+/bin/cp: cannot stat '/obs/mrabenanahary/Post-Traitement/geoCompiler_v2/Jet_CC_0100.vtu': No such file or directory
+3216617
+tycho65
+/scratch/mrabenanahary/run.3216617.PVi95dgnP480t1e4yrs_P31yrs_fi0v995_fj0v995_dz_1v0kps
+more: stat of test_input_i95_MV.par failed: No such file or directory
+/shared/apps/python/3.7.9/bin/python3: can't open file 'geoCompiler.py': [Errno 2] No such file or directory
+srun: error: tycho65: task 0: Exited with exit code 2
+cp: cannot stat './PVi95dgnP480t1e4yrs_P31yrs_fi0v995_fj0v995_dz_1v0kps': No such file or directory
+srun: error: tycho65: task 0: Exited with exit code 1
+/bin/cp: cannot stat '/obs/mrabenanahary/Post-Traitement/geoCompiler_v2/slurm-PVi95dgnP480t1e4yrs_P31yrs_fi0v995_fj0v995_dz_1v0kps-3216617.out': No such file or directory
+srun: error: tycho65: task 0: Exited with exit code 1

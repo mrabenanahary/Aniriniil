@@ -1,0 +1,689 @@
+mkdir: cannot create directory ‘test’: File exists
+3213998
+tycho63
+/scratch/mrabenanahary/run.3213998.test
+::::::::::::::
+test_input.par
+::::::::::::::
+geo_angle_i : 1.6580627893946132
+frame_the_box : False
+nphi : 480
+voxels_dz : 1.0
+voxels_nGamma_cells : 120 #474
+voxels_z_min : -100.0 #km/s
+voxelling_mode : Voxel #
+voxelling_method : 'railgun'     # bazooka
+voxelling_scheme : 'progressive' # brute
+input_file_vtk :  "./Jet_CC_Shang06_0296.vtu"
+output_file_vtk: "./test"
+output_file_vtk_mv: "./test_mv"
+output_mv_spectrum : True
+threshold_f_ism : 0.995
+threshold_f_jet : 0.995
+
+
+frame_the_box : True
+x_frame_min  :  [0.0,0.0] #in cm
+x_frame_max  :  [1.0e+16,2.0e+16] #in cm
+y_frame_min  :  [0.0,0.0] #in cm
+y_frame_max  :  [1.45e+17,1.45e+17] #in cm
+
+plotting  :  True
+plotting_box  :  True
+plot_use_sns : [False,True,True,False]
+plot_sns_palette : ['tab10','tab10','tab10','tab10'] #if plot_use_sns == True
+plot_sns_palette_n : [20,20,20,10]
+plot_mpl_palette : ['viridis','tab10','tab10','viridis'] #if plot_use_sns == False
+plot_mpl_palette_n : [10,10,10,10]
+variable_to_plot : ['number density','v1','v2','p']
+plot_title : ['Denser flattened singular core (PCJ-RW)','Denser flattened singular core (PCJ-RW)','Denser flattened singular core (PCJ-RW)','Denser flattened singular core (PCJ-RW)']
+plot_title_pad : [30.0,30.0,30.0,30.0]
+plot_fontsize_title : [40,40,40,40]
+#variable_label : ['$\mathrm{\rho}$ ($\mathrm{g~cm^{-3}}$)','$\mathrm{v_R}$ ($\mathrm{km~s^{-1}}$)','$\mathrm{v_Z}$ ($\mathrm{km~s^{-1}}$)','$\mathrm{p}$ ($\mathrm{g~cm^{-3}}$)']
+variable_label : ['$\mathrm{\rho}$ ($\mathrm{g~cm^{-3}}$)','$\mathrm{v_R}$ ($\mathrm{km~s^{-1}}$)','$\mathrm{v_Z}$ ($\mathrm{km~s^{-1}}$)','$\mathrm{p}$ ($\mathrm{g~cm^{-3}}$)']
+plot_height  :  [8.0,8.0,8.0,8.0]
+plot_width  :  [8.0,8.0,8.0,8.0]
+plot_xmin : [0,0,0,0] #in 1e17 cm
+plot_xmax : [0.6,0.6,0.6,0.6] #in 1e17 cm
+plot_dr  :  [0.2,0.2,0.2,0.2] #in 1e17 cm
+plot_ymin : [0,0,0,0] #in 1e17 cm
+plot_ymax : [1.35,1.35,1.35,1.35] #in 1e17 cm
+plot_vmin : [3.0e-2,0,0,1.330656086502311e-17]
+plot_vmax : [1.0e+7,50,50,2.1888496348765343e-7]
+plot_fontsize  :  [40,40,40,40]
+plot_fontsize_cbr  :  [20,20,20,20]
+plot_fontsize_global  :  [25,25,25,25]
+plot_colormap  :  ['my_cmap','turbo','turbo','my_cmap']
+plot_darken_factor  :  [0.9,0.9,0.9,0.9]
+plot_rect_lw : [5,3]
+0) PARAMETRES
+Reading parameters...
+All parameters are...
+End of reading parameters...
+I) Read and get touch on .vtu file data and points in python
+Reading input...
+PLotting figures: Begins...
+>>> Fig. 1 of 4: Plotting number density...
+>>> Fig. 2 of 4: Plotting v1...
+>>> Fig. 3 of 4: Plotting v2...
+>>> Fig. 4 of 4: Plotting p...
+Plotting figures : Done...
+Done...
+II) Compute 2D-grid nodes positions and volumes
+Done...
+Computing fractions of ISM and jet and extracting density...
+Done...
+III) Building the empty voxel mesh
+Done...
+Setting masses and converting their units if necessary...
+Done...
+Building the 2D masses arrays...
+Done...
+IV) Voxelling
+Progression (en %): 0.00
+Progression (en %): 0.21
+Progression (en %): 0.42
+Progression (en %): 0.62
+Progression (en %): 0.83
+Progression (en %): 1.04
+Progression (en %): 1.25
+Progression (en %): 1.46
+Progression (en %): 1.67
+Progression (en %): 1.88
+Progression (en %): 2.08
+Progression (en %): 2.29
+Progression (en %): 2.50
+Progression (en %): 2.71
+Progression (en %): 2.92
+Progression (en %): 3.12
+Progression (en %): 3.33
+Progression (en %): 3.54
+Progression (en %): 3.75
+Progression (en %): 3.96
+Progression (en %): 4.17
+Progression (en %): 4.38
+Progression (en %): 4.58
+Progression (en %): 4.79
+Progression (en %): 5.00
+Progression (en %): 5.21
+Progression (en %): 5.42
+Progression (en %): 5.62
+Progression (en %): 5.83
+Progression (en %): 6.04
+Progression (en %): 6.25
+Progression (en %): 6.46
+Progression (en %): 6.67
+Progression (en %): 6.88
+Progression (en %): 7.08
+Progression (en %): 7.29
+Progression (en %): 7.50
+Progression (en %): 7.71
+Progression (en %): 7.92
+Progression (en %): 8.12
+Progression (en %): 8.33
+Progression (en %): 8.54
+Progression (en %): 8.75
+Progression (en %): 8.96
+Progression (en %): 9.17
+Progression (en %): 9.38
+Progression (en %): 9.58
+Progression (en %): 9.79
+Progression (en %): 10.00
+Progression (en %): 10.21
+Progression (en %): 10.42
+Progression (en %): 10.62
+Progression (en %): 10.83
+Progression (en %): 11.04
+Progression (en %): 11.25
+Progression (en %): 11.46
+Progression (en %): 11.67
+Progression (en %): 11.88
+Progression (en %): 12.08
+Progression (en %): 12.29
+Progression (en %): 12.50
+Progression (en %): 12.71
+Progression (en %): 12.92
+Progression (en %): 13.12
+Progression (en %): 13.33
+Progression (en %): 13.54
+Progression (en %): 13.75
+Progression (en %): 13.96
+Progression (en %): 14.17
+Progression (en %): 14.38
+Progression (en %): 14.58
+Progression (en %): 14.79
+Progression (en %): 15.00
+Progression (en %): 15.21
+Progression (en %): 15.42
+Progression (en %): 15.62
+Progression (en %): 15.83
+Progression (en %): 16.04
+Progression (en %): 16.25
+Progression (en %): 16.46
+Progression (en %): 16.67
+Progression (en %): 16.88
+Progression (en %): 17.08
+Progression (en %): 17.29
+Progression (en %): 17.50
+Progression (en %): 17.71
+Progression (en %): 17.92
+Progression (en %): 18.12
+Progression (en %): 18.33
+Progression (en %): 18.54
+Progression (en %): 18.75
+Progression (en %): 18.96
+Progression (en %): 19.17
+Progression (en %): 19.38
+Progression (en %): 19.58
+Progression (en %): 19.79
+Progression (en %): 20.00
+Progression (en %): 20.21
+Progression (en %): 20.42
+Progression (en %): 20.62
+Progression (en %): 20.83
+Progression (en %): 21.04
+Progression (en %): 21.25
+Progression (en %): 21.46
+Progression (en %): 21.67
+Progression (en %): 21.88
+Progression (en %): 22.08
+Progression (en %): 22.29
+Progression (en %): 22.50
+Progression (en %): 22.71
+Progression (en %): 22.92
+Progression (en %): 23.12
+Progression (en %): 23.33
+Progression (en %): 23.54
+Progression (en %): 23.75
+Progression (en %): 23.96
+Progression (en %): 24.17
+Progression (en %): 24.38
+Progression (en %): 24.58
+Progression (en %): 24.79
+Progression (en %): 25.00
+Progression (en %): 25.21
+Progression (en %): 25.42
+Progression (en %): 25.62
+Progression (en %): 25.83
+Progression (en %): 26.04
+Progression (en %): 26.25
+Progression (en %): 26.46
+Progression (en %): 26.67
+Progression (en %): 26.88
+Progression (en %): 27.08
+Progression (en %): 27.29
+Progression (en %): 27.50
+Progression (en %): 27.71
+Progression (en %): 27.92
+Progression (en %): 28.12
+Progression (en %): 28.33
+Progression (en %): 28.54
+Progression (en %): 28.75
+Progression (en %): 28.96
+Progression (en %): 29.17
+Progression (en %): 29.38
+Progression (en %): 29.58
+Progression (en %): 29.79
+Progression (en %): 30.00
+Progression (en %): 30.21
+Progression (en %): 30.42
+Progression (en %): 30.62
+Progression (en %): 30.83
+Progression (en %): 31.04
+Progression (en %): 31.25
+Progression (en %): 31.46
+Progression (en %): 31.67
+Progression (en %): 31.88
+Progression (en %): 32.08
+Progression (en %): 32.29
+read.py is being imported.
+alpha_ = 2
+bound_offset_frac = 1.0
+Delta_ = 1
+dummy_test = {}
+each_percent = 1.0
+each_percent_frac = 0.01
+epsilon_tol = 1e-06
+fac_dx = 0.5
+fac_dy = 0.5
+fac_dz = 0.5
+floor_ism = True
+floor_jet = True
+flux_surface_center = [[0, 2.6875e+16, 0]]
+flux_surface_r_z_inclination = [[1.4e+16, 0.0]]
+frame_ism = True
+frame_jet = True
+frame_the_box = True
+Gamma_ = 0
+geo_2D_attribute_mode = cell
+geo_angle_i = 1.6580627893946132
+geo_rho_2D = None
+input_file_vtk = ./Jet_CC_Shang06_0296.vtu
+input_par = ./test_input.par
+nphi = 480
+nphi_choice_msg = You choosed nphi=60 as an even integer.
+Symmetry in the data cube after voxelling is obtained for i=+/- pi/2 !
+number_of_voxels = 56169
+output_file_vtk = ./test
+output_file_vtk_mv = ./test_mv
+output_impulsion_ascii = ./data.dat
+output_mv_spectrum = True
+phi_ = 2
+plot_colormap = ['my_cmap', 'turbo', 'turbo', 'my_cmap']
+plot_darken_factor = [0.9, 0.9, 0.9, 0.9]
+plot_dr = [0.2, 0.2, 0.2, 0.2]
+plot_fontsize = [40, 40, 40, 40]
+plot_fontsize_cbr = [20, 20, 20, 20]
+plot_fontsize_global = [25, 25, 25, 25]
+plot_fontsize_title = [40, 40, 40, 40]
+plot_height = [8.0, 8.0, 8.0, 8.0]
+plot_mpl_palette = ['viridis', 'tab10', 'tab10', 'viridis']
+plot_mpl_palette_n = [10, 10, 10, 10]
+plot_rect_lw = [5, 3]
+plot_sns_palette = ['tab10', 'tab10', 'tab10', 'tab10']
+plot_sns_palette_n = [20, 20, 20, 10]
+plot_title = ['Denser flattened singular core (PCJ-RW)', 'Denser flattened singular core (PCJ-RW)', 'Denser flattened singular core (PCJ-RW)', 'Denser flattened singular core (PCJ-RW)']
+plot_title_pad = [30.0, 30.0, 30.0, 30.0]
+plot_use_sns = [False, True, True, False]
+plot_vmax = [10000000.0, 50, 50, 2.1888496348765343e-07]
+plot_vmin = [0.03, 0, 0, 1.330656086502311e-17]
+plot_width = [8.0, 8.0, 8.0, 8.0]
+plot_xmax = [0.6, 0.6, 0.6, 0.6]
+plot_xmin = [0, 0, 0, 0]
+plot_ymax = [1.35, 1.35, 1.35, 1.35]
+plot_ymin = [0, 0, 0, 0]
+plotting = True
+plotting_box = True
+possible_geo_2D_attribute_mode = ['cell']
+r_ = 0
+rho_ism_fac = 1.0
+rho_jet_fac = 1.0
+rhoTracers = {'ISM': [0, 0], 'jet': [0, 0]}
+threshold_f_ism = 0.995
+threshold_f_jet = 0.995
+unit_angle_i = rad
+unit_mass_flux_output = solMass / yr
+unit_masse = solMass
+unit_momentum_flux_output = km solMass / (s yr)
+unit_output_v = km / s
+unit_volume = AU3
+unit_voxels_dz = km / s
+unit_voxels_z_max = km / s
+unit_voxels_z_min = km / s
+variable_label = ['$\\mathrm{\\rho}$ ($\\mathrm{g~cm^{-3}}$)', '$\\mathrm{v_R}$ ($\\mathrm{km~s^{-1}}$)', '$\\mathrm{v_Z}$ ($\\mathrm{km~s^{-1}}$)', '$\\mathrm{p}$ ($\\mathrm{g~cm^{-3}}$)']
+variable_to_plot = ['number density', 'v1', 'v2', 'p']
+velocityVector = {'v1': 0, 'v2': 0, 'v3': 0}
+voxelling_method = railgun
+voxelling_method_list = ['bazooka', 'railgun']
+voxelling_mode = Voxel
+voxelling_mode_list = ['Voxel', 'Flow_rates']
+voxelling_scheme = progressive
+voxelling_scheme_list = {'bazooka': ['brute'], 'railgun': ['progressive']}
+voxels_dz = 100000.0
+voxels_nGamma_cells = 120
+voxels_z_max = 15000000.0
+voxels_z_min = -10000000.0
+x_ = 0
+x_frame = 0
+x_frame_max = [1e+16, 2e+16]
+x_frame_min = [0.0, 0.0]
+x_max = 9.799999999999998e+16
+y_ = 1
+y_frame = 1
+y_frame_max = [1.45e+17, 1.45e+17]
+y_frame_min = [0.0, 0.0]
+y_max = 1.5091999999999997e+17
+z_cart_ = 2
+z_cyl_ = 1
+[(281600,), (281600,), (281600,)]
+[(281600,), (281600,)]
+v_X/Y/Z_min =  -6.721186505471512e+16 -1.967176538186784e+17 -10000000.0
+X/Y/Z_min =  -6.721186505471512e+16 -1.967176538186784e+17 -10000000.0
+v_X/Y/Z_max =  6.721186505471512e+16 1.9507834003685776e+17 15000000.0
+X/Y/Z_max =  6.721186505471512e+16 1.9507834003685776e+17 15000000.0
+dx,dy,dz =  1639313781822320.0 1639313781822320.0 100000.0
+Number of available masses PV output : 13
+List of available masses PV output:
+1) masse_arrays
+2) masse_arrays_box_exc
+3) masse_arrays_box_inc
+4) masse_arrays_box_ism_exc
+5) masse_arrays_box_ism_inc
+6) masse_arrays_box_jet_exc
+7) masse_arrays_box_jet_inc
+8) masse_arrays_ism
+9) masse_arrays_ism_exc
+10) masse_arrays_ism_inc
+11) masse_arrays_jet
+12) masse_arrays_jet_exc
+13) masse_arrays_jet_inc
+
+
+Progression (en %): 0.00
+
+Progression (en %): 0.21
+
+Progression (en %): 0.42
+
+Progression (en %): 0.62
+
+Progression (en %): 0.83
+
+Progression (en %): 1.04
+
+Progression (en %): 1.25
+
+Progression (en %): 1.46
+
+Progression (en %): 1.67
+
+Progression (en %): 1.88
+
+Progression (en %): 2.08
+
+Progression (en %): 2.29
+
+Progression (en %): 2.50
+
+Progression (en %): 2.71
+
+Progression (en %): 2.92
+
+Progression (en %): 3.12
+
+Progression (en %): 3.33
+
+Progression (en %): 3.54
+
+Progression (en %): 3.75
+
+Progression (en %): 3.96
+
+Progression (en %): 4.17
+
+Progression (en %): 4.38
+
+Progression (en %): 4.58
+
+Progression (en %): 4.79
+
+Progression (en %): 5.00
+
+Progression (en %): 5.21
+
+Progression (en %): 5.42
+
+Progression (en %): 5.62
+
+Progression (en %): 5.83
+
+Progression (en %): 6.04
+
+Progression (en %): 6.25
+
+Progression (en %): 6.46
+
+Progression (en %): 6.67
+
+Progression (en %): 6.88
+
+Progression (en %): 7.08
+
+Progression (en %): 7.29
+
+Progression (en %): 7.50
+
+Progression (en %): 7.71
+
+Progression (en %): 7.92
+
+Progression (en %): 8.12
+
+Progression (en %): 8.33
+
+Progression (en %): 8.54
+
+Progression (en %): 8.75
+
+Progression (en %): 8.96
+
+Progression (en %): 9.17
+
+Progression (en %): 9.38
+
+Progression (en %): 9.58
+
+Progression (en %): 9.79
+
+Progression (en %): 10.00
+
+Progression (en %): 10.21
+
+Progression (en %): 10.42
+
+Progression (en %): 10.62
+
+Progression (en %): 10.83
+
+Progression (en %): 11.04
+
+Progression (en %): 11.25
+
+Progression (en %): 11.46
+
+Progression (en %): 11.67
+
+Progression (en %): 11.88
+
+Progression (en %): 12.08
+
+Progression (en %): 12.29
+
+Progression (en %): 12.50
+
+Progression (en %): 12.71
+
+Progression (en %): 12.92
+
+Progression (en %): 13.12
+
+Progression (en %): 13.33
+
+Progression (en %): 13.54
+
+Progression (en %): 13.75
+
+Progression (en %): 13.96
+
+Progression (en %): 14.17
+
+Progression (en %): 14.38
+
+Progression (en %): 14.58
+
+Progression (en %): 14.79
+
+Progression (en %): 15.00
+
+Progression (en %): 15.21
+
+Progression (en %): 15.42
+
+Progression (en %): 15.62
+
+Progression (en %): 15.83
+
+Progression (en %): 16.04
+
+Progression (en %): 16.25
+
+Progression (en %): 16.46
+
+Progression (en %): 16.67
+
+Progression (en %): 16.88
+
+Progression (en %): 17.08
+
+Progression (en %): 17.29
+
+Progression (en %): 17.50
+
+Progression (en %): 17.71
+
+Progression (en %): 17.92
+
+Progression (en %): 18.12
+
+Progression (en %): 18.33
+
+Progression (en %): 18.54
+
+Progression (en %): 18.75
+
+Progression (en %): 18.96
+
+Progression (en %): 19.17
+
+Progression (en %): 19.38
+
+Progression (en %): 19.58
+
+Progression (en %): 19.79
+
+Progression (en %): 20.00
+
+Progression (en %): 20.21
+
+Progression (en %): 20.42
+
+Progression (en %): 20.62
+
+Progression (en %): 20.83
+
+Progression (en %): 21.04
+
+Progression (en %): 21.25
+
+Progression (en %): 21.46
+
+Progression (en %): 21.67
+
+Progression (en %): 21.88
+
+Progression (en %): 22.08
+
+Progression (en %): 22.29
+
+Progression (en %): 22.50
+
+Progression (en %): 22.71
+
+Progression (en %): 22.92
+
+Progression (en %): 23.12
+
+Progression (en %): 23.33
+
+Progression (en %): 23.54
+
+Progression (en %): 23.75
+
+Progression (en %): 23.96
+
+Progression (en %): 24.17
+
+Progression (en %): 24.38
+
+Progression (en %): 24.58
+
+Progression (en %): 24.79
+
+Progression (en %): 25.00
+
+Progression (en %): 25.21
+
+Progression (en %): 25.42
+
+Progression (en %): 25.62
+
+Progression (en %): 25.83
+
+Progression (en %): 26.04
+
+Progression (en %): 26.25
+
+Progression (en %): 26.46
+
+Progression (en %): 26.67
+
+Progression (en %): 26.88
+
+Progression (en %): 27.08
+
+Progression (en %): 27.29
+
+Progression (en %): 27.50
+
+Progression (en %): 27.71
+
+Progression (en %): 27.92
+
+Progression (en %): 28.12
+
+Progression (en %): 28.33
+
+Progression (en %): 28.54
+
+Progression (en %): 28.75
+
+Progression (en %): 28.96
+
+Progression (en %): 29.17
+
+Progression (en %): 29.38
+
+Progression (en %): 29.58
+
+Progression (en %): 29.79
+
+Progression (en %): 30.00
+
+Progression (en %): 30.21
+
+Progression (en %): 30.42
+
+Progression (en %): 30.62
+
+Progression (en %): 30.83
+
+Progression (en %): 31.04
+
+Progression (en %): 31.25
+
+Progression (en %): 31.46
+
+Progression (en %): 31.67
+
+Progression (en %): 31.88
+
+Progression (en %): 32.08
+
+Progression (en %): 32.29
+
+Progression (en %): 32.50
+Progression (en %): 32.71
+Progression (en %): 32.92
+Progression (en %): 33.12
+Progression (en %): 33.33
+Progression (en %): 33.54
+Progression (en %): 33.75
+Progression (en %): 33.96
+Progression (en %): 34.17
+Progression (en %): 34.38
+Progression (en %): 34.58
+srun: got SIGCONT
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd-tycho63: error: *** JOB 3213998 ON tycho63 CANCELLED AT 2022-04-22T08:38:01 ***
+srun: forcing job termination
+slurmstepd-tycho63: error: *** STEP 3213998.5 ON tycho63 CANCELLED AT 2022-04-22T08:38:01 ***

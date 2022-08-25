@@ -1,0 +1,88 @@
+3214000
+tycho64
+/scratch/mrabenanahary/run.3214000.test
+::::::::::::::
+test_input.par
+::::::::::::::
+geo_angle_i : 1.6580627893946132
+frame_the_box : False
+nphi : 480
+voxels_dz : 1.0
+voxels_nGamma_cells : 120 #474
+voxels_z_min : -100.0 #km/s
+voxelling_mode : Voxel #
+voxelling_method : 'railgun'     # bazooka
+voxelling_scheme : 'progressive' # brute
+input_file_vtk :  "./Jet_CC_Shang06_0296.vtu"
+output_file_vtk: "./test"
+output_file_vtk_mv: "./test_mv"
+output_mv_spectrum : True
+threshold_f_ism : 0.995
+threshold_f_jet : 0.995
+
+
+frame_the_box : True
+x_frame_min  :  [0.0,0.0] #in cm
+x_frame_max  :  [1.0e+16,2.0e+16] #in cm
+y_frame_min  :  [0.0,0.0] #in cm
+y_frame_max  :  [1.45e+17,1.45e+17] #in cm
+
+plotting  :  True
+plotting_box  :  True
+plot_use_sns : [False,True,True,False]
+plot_sns_palette : ['tab10','tab10','tab10','tab10'] #if plot_use_sns == True
+plot_sns_palette_n : [20,10,10,10]
+plot_mpl_palette : ['viridis','tab10','tab10','viridis'] #if plot_use_sns == False
+plot_mpl_palette_n : [10,10,10,10]
+variable_to_plot : ['number density','v1','v2','p']
+plot_title : ['Denser flattened singular core (PCJ-RW)','Denser flattened singular core (PCJ-RW)','Denser flattened singular core (PCJ-RW)','Denser flattened singular core (PCJ-RW)']
+plot_title_pad : [30.0,30.0,30.0,30.0]
+plot_fontsize_title : [40,40,40,40]
+#variable_label : ['$\mathrm{\rho}$ ($\mathrm{g~cm^{-3}}$)','$\mathrm{v_R}$ ($\mathrm{km~s^{-1}}$)','$\mathrm{v_Z}$ ($\mathrm{km~s^{-1}}$)','$\mathrm{p}$ ($\mathrm{g~cm^{-3}}$)']
+variable_label : ['$\mathrm{\rho}$ ($\mathrm{g~cm^{-3}}$)','$\mathrm{v_R}$ ($\mathrm{km~s^{-1}}$)','$\mathrm{v_Z}$ ($\mathrm{km~s^{-1}}$)','$\mathrm{p}$ ($\mathrm{g~cm^{-3}}$)']
+plot_height  :  [8.0,8.0,8.0,8.0]
+plot_width  :  [8.0,8.0,8.0,8.0]
+plot_xmin : [0,0,0,0] #in 1e17 cm
+plot_xmax : [0.6,0.6,0.6,0.6] #in 1e17 cm
+plot_dr  :  [0.2,0.2,0.2,0.2] #in 1e17 cm
+plot_ymin : [0,0,0,0] #in 1e17 cm
+plot_ymax : [1.35,1.35,1.35,1.35] #in 1e17 cm
+plot_vmin : [3.0e-2,0,0,1.330656086502311e-17]
+plot_vmax : [1.0e+7,50,50,2.1888496348765343e-7]
+plot_fontsize  :  [40,40,40,40]
+plot_fontsize_cbr  :  [20,20,20,20]
+plot_fontsize_global  :  [25,25,25,25]
+plot_colormap  :  ['my_cmap','turbo','turbo','my_cmap']
+plot_darken_factor  :  [0.9,0.9,0.9,0.9]
+plot_rect_lw : [5,3]
+0) PARAMETRES
+Reading parameters...
+All parameters are...
+End of reading parameters...
+I) Read and get touch on .vtu file data and points in python
+Reading input...
+PLotting figures: Begins...
+>>> Fig. 1 of 4: Plotting number density...
+>>> Fig. 2 of 4: Plotting v1...
+>>> Fig. 3 of 4: Plotting v2...
+>>> Fig. 4 of 4: Plotting p...
+Plotting figures : Done...
+Done...
+II) Compute 2D-grid nodes positions and volumes
+Done...
+Computing fractions of ISM and jet and extracting density...
+Done...
+III) Building the empty voxel mesh
+Done...
+Setting masses and converting their units if necessary...
+Done...
+Building the 2D masses arrays...
+Done...
+IV) Voxelling
+Progression (en %): 0.00
+Progression (en %): 0.21
+srun: got SIGCONT
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd-tycho64: error: *** JOB 3214000 ON tycho64 CANCELLED AT 2022-04-22T08:43:51 ***
+srun: forcing job termination
+slurmstepd-tycho64: error: *** STEP 3214000.5 ON tycho64 CANCELLED AT 2022-04-22T08:43:51 ***

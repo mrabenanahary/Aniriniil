@@ -1,0 +1,4 @@
+mkdir: cannot create directory ‘PVi125dgnP480t1e4yrs_P31yrs_fi0v995_fj0v995_dz_1v0kps’: File exists
+srun: got SIGCONT
+slurmstepd-tycho63: error: *** JOB 3216528 ON tycho63 CANCELLED AT 2022-04-26T17:51:09 ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.

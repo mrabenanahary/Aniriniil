@@ -1,0 +1,1653 @@
+mkdir: cannot create directory ‘test’: File exists
+3213995
+tycho63
+/scratch/mrabenanahary/run.3213995.test
+::::::::::::::
+test_input.par
+::::::::::::::
+geo_angle_i : 1.6580627893946132
+frame_the_box : False
+nphi : 480
+voxels_dz : 1.0
+voxels_nGamma_cells : 120 #474
+voxels_z_min : -100.0 #km/s
+voxelling_mode : Voxel #
+voxelling_method : 'railgun'     # bazooka
+voxelling_scheme : 'progressive' # brute
+input_file_vtk :  "./Jet_CC_Shang06_0296.vtu"
+output_file_vtk: "./test"
+output_file_vtk_mv: "./test_mv"
+output_mv_spectrum : True
+threshold_f_ism : 0.995
+threshold_f_jet : 0.995
+
+
+frame_the_box : True
+x_frame_min  :  [0.0,0.0] #in cm
+x_frame_max  :  [1.0e+16,2.0e+16] #in cm
+y_frame_min  :  [0.0,0.0] #in cm
+y_frame_max  :  [1.45e+17,1.45e+17] #in cm
+
+plotting  :  True
+plotting_box  :  True
+plot_use_sns : False
+#plot_sns_palette : ['tab10','tab10','tab10','tab10'] #if plot_use_sns == True
+#plot_sns_palette_n : [20,20,20,10]
+plot_mpl_palette : ['viridis','viridis','viridis','viridis'] #if plot_use_sns == False
+plot_mpl_palette_n : [10,10,10,10]
+variable_to_plot : ['number density','v1','v2','p']
+plot_title : ['Denser flattened singular core (PCJ-RW)','Denser flattened singular core (PCJ-RW)','Denser flattened singular core (PCJ-RW)','Denser flattened singular core (PCJ-RW)']
+plot_title_pad : [30.0,30.0,30.0,30.0]
+plot_fontsize_title : [40,40,40,40]
+#variable_label : ['$\mathrm{\rho}$ ($\mathrm{g~cm^{-3}}$)','$\mathrm{v_R}$ ($\mathrm{km~s^{-1}}$)','$\mathrm{v_Z}$ ($\mathrm{km~s^{-1}}$)','$\mathrm{p}$ ($\mathrm{g~cm^{-3}}$)']
+variable_label : ['$\mathrm{\rho}$ ($\mathrm{g~cm^{-3}}$)','$\mathrm{v_R}$ ($\mathrm{km~s^{-1}}$)','$\mathrm{v_Z}$ ($\mathrm{km~s^{-1}}$)','$\mathrm{p}$ ($\mathrm{g~cm^{-3}}$)']
+plot_height  :  [8.0,8.0,8.0,8.0]
+plot_width  :  [8.0,8.0,8.0,8.0]
+plot_xmin : [0,0,0,0] #in 1e17 cm
+plot_xmax : [0.6,0.6,0.6,0.6] #in 1e17 cm
+plot_dr  :  [0.2,0.2,0.2,0.2] #in 1e17 cm
+plot_ymin : [0,0,0,0] #in 1e17 cm
+plot_ymax : [1.35,1.35,1.35,1.35] #in 1e17 cm
+plot_vmin : [3.0e-2,0,0,1.330656086502311e-17]
+plot_vmax : [1.0e+7,50,50,2.1888496348765343e-7]
+plot_fontsize  :  [40,40,40,40]
+plot_fontsize_cbr  :  [20,20,20,20]
+plot_fontsize_global  :  [25,25,25,25]
+plot_colormap  :  ['my_cmap','turbo','turbo','my_cmap']
+plot_darken_factor  :  [0.9,0.9,0.9,0.9]
+plot_rect_lw : [5,3]
+0) PARAMETRES
+Reading parameters...
+All parameters are...
+End of reading parameters...
+I) Read and get touch on .vtu file data and points in python
+Reading input...
+PLotting figures: Begins...
+>>> Fig. 1 of 4: Plotting number density...
+>>> Fig. 2 of 4: Plotting v1...
+>>> Fig. 3 of 4: Plotting v2...
+>>> Fig. 4 of 4: Plotting p...
+Plotting figures : Done...
+Done...
+II) Compute 2D-grid nodes positions and volumes
+Done...
+Computing fractions of ISM and jet and extracting density...
+Done...
+III) Building the empty voxel mesh
+Done...
+Setting masses and converting their units if necessary...
+Done...
+Building the 2D masses arrays...
+Done...
+IV) Voxelling
+Progression (en %): 0.00
+Progression (en %): 0.21
+Progression (en %): 0.42
+Progression (en %): 0.62
+Progression (en %): 0.83
+Progression (en %): 1.04
+Progression (en %): 1.25
+Progression (en %): 1.46
+Progression (en %): 1.67
+Progression (en %): 1.88
+Progression (en %): 2.08
+Progression (en %): 2.29
+Progression (en %): 2.50
+Progression (en %): 2.71
+Progression (en %): 2.92
+Progression (en %): 3.12
+Progression (en %): 3.33
+Progression (en %): 3.54
+Progression (en %): 3.75
+Progression (en %): 3.96
+Progression (en %): 4.17
+Progression (en %): 4.38
+Progression (en %): 4.58
+Progression (en %): 4.79
+Progression (en %): 5.00
+Progression (en %): 5.21
+Progression (en %): 5.42
+Progression (en %): 5.62
+Progression (en %): 5.83
+Progression (en %): 6.04
+Progression (en %): 6.25
+Progression (en %): 6.46
+Progression (en %): 6.67
+Progression (en %): 6.88
+Progression (en %): 7.08
+Progression (en %): 7.29
+Progression (en %): 7.50
+Progression (en %): 7.71
+Progression (en %): 7.92
+Progression (en %): 8.12
+Progression (en %): 8.33
+Progression (en %): 8.54
+Progression (en %): 8.75
+Progression (en %): 8.96
+Progression (en %): 9.17
+Progression (en %): 9.38
+Progression (en %): 9.58
+Progression (en %): 9.79
+Progression (en %): 10.00
+Progression (en %): 10.21
+Progression (en %): 10.42
+Progression (en %): 10.62
+Progression (en %): 10.83
+Progression (en %): 11.04
+Progression (en %): 11.25
+Progression (en %): 11.46
+Progression (en %): 11.67
+Progression (en %): 11.88
+Progression (en %): 12.08
+Progression (en %): 12.29
+Progression (en %): 12.50
+Progression (en %): 12.71
+Progression (en %): 12.92
+Progression (en %): 13.12
+Progression (en %): 13.33
+Progression (en %): 13.54
+Progression (en %): 13.75
+Progression (en %): 13.96
+Progression (en %): 14.17
+Progression (en %): 14.38
+Progression (en %): 14.58
+Progression (en %): 14.79
+Progression (en %): 15.00
+Progression (en %): 15.21
+Progression (en %): 15.42
+Progression (en %): 15.62
+Progression (en %): 15.83
+Progression (en %): 16.04
+Progression (en %): 16.25
+Progression (en %): 16.46
+Progression (en %): 16.67
+Progression (en %): 16.88
+Progression (en %): 17.08
+Progression (en %): 17.29
+Progression (en %): 17.50
+Progression (en %): 17.71
+Progression (en %): 17.92
+Progression (en %): 18.12
+Progression (en %): 18.33
+Progression (en %): 18.54
+Progression (en %): 18.75
+Progression (en %): 18.96
+Progression (en %): 19.17
+Progression (en %): 19.38
+Progression (en %): 19.58
+Progression (en %): 19.79
+Progression (en %): 20.00
+Progression (en %): 20.21
+Progression (en %): 20.42
+Progression (en %): 20.62
+Progression (en %): 20.83
+Progression (en %): 21.04
+Progression (en %): 21.25
+Progression (en %): 21.46
+Progression (en %): 21.67
+Progression (en %): 21.88
+Progression (en %): 22.08
+Progression (en %): 22.29
+Progression (en %): 22.50
+Progression (en %): 22.71
+Progression (en %): 22.92
+Progression (en %): 23.12
+Progression (en %): 23.33
+Progression (en %): 23.54
+Progression (en %): 23.75
+Progression (en %): 23.96
+Progression (en %): 24.17
+Progression (en %): 24.38
+Progression (en %): 24.58
+Progression (en %): 24.79
+Progression (en %): 25.00
+Progression (en %): 25.21
+Progression (en %): 25.42
+Progression (en %): 25.62
+Progression (en %): 25.83
+Progression (en %): 26.04
+Progression (en %): 26.25
+Progression (en %): 26.46
+Progression (en %): 26.67
+Progression (en %): 26.88
+Progression (en %): 27.08
+Progression (en %): 27.29
+Progression (en %): 27.50
+Progression (en %): 27.71
+Progression (en %): 27.92
+Progression (en %): 28.12
+Progression (en %): 28.33
+Progression (en %): 28.54
+Progression (en %): 28.75
+Progression (en %): 28.96
+Progression (en %): 29.17
+Progression (en %): 29.38
+Progression (en %): 29.58
+Progression (en %): 29.79
+Progression (en %): 30.00
+Progression (en %): 30.21
+Progression (en %): 30.42
+Progression (en %): 30.62
+Progression (en %): 30.83
+Progression (en %): 31.04
+Progression (en %): 31.25
+Progression (en %): 31.46
+Progression (en %): 31.67
+Progression (en %): 31.88
+Progression (en %): 32.08
+Progression (en %): 32.29
+Progression (en %): 32.50
+read.py is being imported.
+alpha_ = 2
+bound_offset_frac = 1.0
+Delta_ = 1
+dummy_test = {}
+each_percent = 1.0
+each_percent_frac = 0.01
+epsilon_tol = 1e-06
+fac_dx = 0.5
+fac_dy = 0.5
+fac_dz = 0.5
+floor_ism = True
+floor_jet = True
+flux_surface_center = [[0, 2.6875e+16, 0]]
+flux_surface_r_z_inclination = [[1.4e+16, 0.0]]
+frame_ism = True
+frame_jet = True
+frame_the_box = True
+Gamma_ = 0
+geo_2D_attribute_mode = cell
+geo_angle_i = 1.6580627893946132
+geo_rho_2D = None
+input_file_vtk = ./Jet_CC_Shang06_0296.vtu
+input_par = ./test_input.par
+nphi = 480
+nphi_choice_msg = You choosed nphi=60 as an even integer.
+Symmetry in the data cube after voxelling is obtained for i=+/- pi/2 !
+number_of_voxels = 56169
+output_file_vtk = ./test
+output_file_vtk_mv = ./test_mv
+output_impulsion_ascii = ./data.dat
+output_mv_spectrum = True
+phi_ = 2
+plot_colormap = ['my_cmap', 'turbo', 'turbo', 'my_cmap']
+plot_darken_factor = [0.9, 0.9, 0.9, 0.9]
+plot_dr = [0.2, 0.2, 0.2, 0.2]
+plot_fontsize = [40, 40, 40, 40]
+plot_fontsize_cbr = [20, 20, 20, 20]
+plot_fontsize_global = [25, 25, 25, 25]
+plot_fontsize_title = [40, 40, 40, 40]
+plot_height = [8.0, 8.0, 8.0, 8.0]
+plot_mpl_palette = ['viridis', 'viridis', 'viridis', 'viridis']
+plot_mpl_palette_n = [10, 10, 10, 10]
+plot_rect_lw = [5, 3]
+plot_sns_palette = ['tab10', 'tab10', 'tab10']
+plot_sns_palette_n = [20, 20, 20]
+plot_title = ['Denser flattened singular core (PCJ-RW)', 'Denser flattened singular core (PCJ-RW)', 'Denser flattened singular core (PCJ-RW)', 'Denser flattened singular core (PCJ-RW)']
+plot_title_pad = [30.0, 30.0, 30.0, 30.0]
+plot_use_sns = False
+plot_vmax = [10000000.0, 50, 50, 2.1888496348765343e-07]
+plot_vmin = [0.03, 0, 0, 1.330656086502311e-17]
+plot_width = [8.0, 8.0, 8.0, 8.0]
+plot_xmax = [0.6, 0.6, 0.6, 0.6]
+plot_xmin = [0, 0, 0, 0]
+plot_ymax = [1.35, 1.35, 1.35, 1.35]
+plot_ymin = [0, 0, 0, 0]
+plotting = True
+plotting_box = True
+possible_geo_2D_attribute_mode = ['cell']
+r_ = 0
+rho_ism_fac = 1.0
+rho_jet_fac = 1.0
+rhoTracers = {'ISM': [0, 0], 'jet': [0, 0]}
+threshold_f_ism = 0.995
+threshold_f_jet = 0.995
+unit_angle_i = rad
+unit_mass_flux_output = solMass / yr
+unit_masse = solMass
+unit_momentum_flux_output = km solMass / (s yr)
+unit_output_v = km / s
+unit_volume = AU3
+unit_voxels_dz = km / s
+unit_voxels_z_max = km / s
+unit_voxels_z_min = km / s
+variable_label = ['$\\mathrm{\\rho}$ ($\\mathrm{g~cm^{-3}}$)', '$\\mathrm{v_R}$ ($\\mathrm{km~s^{-1}}$)', '$\\mathrm{v_Z}$ ($\\mathrm{km~s^{-1}}$)', '$\\mathrm{p}$ ($\\mathrm{g~cm^{-3}}$)']
+variable_to_plot = ['number density', 'v1', 'v2', 'p']
+velocityVector = {'v1': 0, 'v2': 0, 'v3': 0}
+voxelling_method = railgun
+voxelling_method_list = ['bazooka', 'railgun']
+voxelling_mode = Voxel
+voxelling_mode_list = ['Voxel', 'Flow_rates']
+voxelling_scheme = progressive
+voxelling_scheme_list = {'bazooka': ['brute'], 'railgun': ['progressive']}
+voxels_dz = 100000.0
+voxels_nGamma_cells = 120
+voxels_z_max = 15000000.0
+voxels_z_min = -10000000.0
+x_ = 0
+x_frame = 0
+x_frame_max = [1e+16, 2e+16]
+x_frame_min = [0.0, 0.0]
+x_max = 9.799999999999998e+16
+y_ = 1
+y_frame = 1
+y_frame_max = [1.45e+17, 1.45e+17]
+y_frame_min = [0.0, 0.0]
+y_max = 1.5091999999999997e+17
+z_cart_ = 2
+z_cyl_ = 1
+[(281600,), (281600,), (281600,)]
+[(281600,), (281600,)]
+v_X/Y/Z_min =  -6.721186505471512e+16 -1.967176538186784e+17 -10000000.0
+X/Y/Z_min =  -6.721186505471512e+16 -1.967176538186784e+17 -10000000.0
+v_X/Y/Z_max =  6.721186505471512e+16 1.9507834003685776e+17 15000000.0
+X/Y/Z_max =  6.721186505471512e+16 1.9507834003685776e+17 15000000.0
+dx,dy,dz =  1639313781822320.0 1639313781822320.0 100000.0
+Number of available masses PV output : 13
+List of available masses PV output:
+1) masse_arrays
+2) masse_arrays_box_exc
+3) masse_arrays_box_inc
+4) masse_arrays_box_ism_exc
+5) masse_arrays_box_ism_inc
+6) masse_arrays_box_jet_exc
+7) masse_arrays_box_jet_inc
+8) masse_arrays_ism
+9) masse_arrays_ism_exc
+10) masse_arrays_ism_inc
+11) masse_arrays_jet
+12) masse_arrays_jet_exc
+13) masse_arrays_jet_inc
+
+
+Progression (en %): 0.00
+
+Progression (en %): 0.21
+
+Progression (en %): 0.42
+
+Progression (en %): 0.62
+
+Progression (en %): 0.83
+
+Progression (en %): 1.04
+
+Progression (en %): 1.25
+
+Progression (en %): 1.46
+
+Progression (en %): 1.67
+
+Progression (en %): 1.88
+
+Progression (en %): 2.08
+
+Progression (en %): 2.29
+
+Progression (en %): 2.50
+
+Progression (en %): 2.71
+
+Progression (en %): 2.92
+
+Progression (en %): 3.12
+
+Progression (en %): 3.33
+
+Progression (en %): 3.54
+
+Progression (en %): 3.75
+
+Progression (en %): 3.96
+
+Progression (en %): 4.17
+
+Progression (en %): 4.38
+
+Progression (en %): 4.58
+
+Progression (en %): 4.79
+
+Progression (en %): 5.00
+
+Progression (en %): 5.21
+
+Progression (en %): 5.42
+
+Progression (en %): 5.62
+
+Progression (en %): 5.83
+
+Progression (en %): 6.04
+
+Progression (en %): 6.25
+
+Progression (en %): 6.46
+
+Progression (en %): 6.67
+
+Progression (en %): 6.88
+
+Progression (en %): 7.08
+
+Progression (en %): 7.29
+
+Progression (en %): 7.50
+
+Progression (en %): 7.71
+
+Progression (en %): 7.92
+
+Progression (en %): 8.12
+
+Progression (en %): 8.33
+
+Progression (en %): 8.54
+
+Progression (en %): 8.75
+
+Progression (en %): 8.96
+
+Progression (en %): 9.17
+
+Progression (en %): 9.38
+
+Progression (en %): 9.58
+
+Progression (en %): 9.79
+
+Progression (en %): 10.00
+
+Progression (en %): 10.21
+
+Progression (en %): 10.42
+
+Progression (en %): 10.62
+
+Progression (en %): 10.83
+
+Progression (en %): 11.04
+
+Progression (en %): 11.25
+
+Progression (en %): 11.46
+
+Progression (en %): 11.67
+
+Progression (en %): 11.88
+
+Progression (en %): 12.08
+
+Progression (en %): 12.29
+
+Progression (en %): 12.50
+
+Progression (en %): 12.71
+
+Progression (en %): 12.92
+
+Progression (en %): 13.12
+
+Progression (en %): 13.33
+
+Progression (en %): 13.54
+
+Progression (en %): 13.75
+
+Progression (en %): 13.96
+
+Progression (en %): 14.17
+
+Progression (en %): 14.38
+
+Progression (en %): 14.58
+
+Progression (en %): 14.79
+
+Progression (en %): 15.00
+
+Progression (en %): 15.21
+
+Progression (en %): 15.42
+
+Progression (en %): 15.62
+
+Progression (en %): 15.83
+
+Progression (en %): 16.04
+
+Progression (en %): 16.25
+
+Progression (en %): 16.46
+
+Progression (en %): 16.67
+
+Progression (en %): 16.88
+
+Progression (en %): 17.08
+
+Progression (en %): 17.29
+
+Progression (en %): 17.50
+
+Progression (en %): 17.71
+
+Progression (en %): 17.92
+
+Progression (en %): 18.12
+
+Progression (en %): 18.33
+
+Progression (en %): 18.54
+
+Progression (en %): 18.75
+
+Progression (en %): 18.96
+
+Progression (en %): 19.17
+
+Progression (en %): 19.38
+
+Progression (en %): 19.58
+
+Progression (en %): 19.79
+
+Progression (en %): 20.00
+
+Progression (en %): 20.21
+
+Progression (en %): 20.42
+
+Progression (en %): 20.62
+
+Progression (en %): 20.83
+
+Progression (en %): 21.04
+
+Progression (en %): 21.25
+
+Progression (en %): 21.46
+
+Progression (en %): 21.67
+
+Progression (en %): 21.88
+
+Progression (en %): 22.08
+
+Progression (en %): 22.29
+
+Progression (en %): 22.50
+
+Progression (en %): 22.71
+
+Progression (en %): 22.92
+
+Progression (en %): 23.12
+
+Progression (en %): 23.33
+
+Progression (en %): 23.54
+
+Progression (en %): 23.75
+
+Progression (en %): 23.96
+
+Progression (en %): 24.17
+
+Progression (en %): 24.38
+
+Progression (en %): 24.58
+
+Progression (en %): 24.79
+
+Progression (en %): 25.00
+
+Progression (en %): 25.21
+
+Progression (en %): 25.42
+
+Progression (en %): 25.62
+
+Progression (en %): 25.83
+
+Progression (en %): 26.04
+
+Progression (en %): 26.25
+
+Progression (en %): 26.46
+
+Progression (en %): 26.67
+
+Progression (en %): 26.88
+
+Progression (en %): 27.08
+
+Progression (en %): 27.29
+
+Progression (en %): 27.50
+
+Progression (en %): 27.71
+
+Progression (en %): 27.92
+
+Progression (en %): 28.12
+
+Progression (en %): 28.33
+
+Progression (en %): 28.54
+
+Progression (en %): 28.75
+
+Progression (en %): 28.96
+
+Progression (en %): 29.17
+
+Progression (en %): 29.38
+
+Progression (en %): 29.58
+
+Progression (en %): 29.79
+
+Progression (en %): 30.00
+
+Progression (en %): 30.21
+
+Progression (en %): 30.42
+
+Progression (en %): 30.62
+
+Progression (en %): 30.83
+
+Progression (en %): 31.04
+
+Progression (en %): 31.25
+
+Progression (en %): 31.46
+
+Progression (en %): 31.67
+
+Progression (en %): 31.88
+
+Progression (en %): 32.08
+
+Progression (en %): 32.29
+
+Progression (en %): 32.50
+
+Progression (en %): 32.71
+Progression (en %): 32.92
+Progression (en %): 33.12
+Progression (en %): 33.33
+Progression (en %): 33.54
+Progression (en %): 33.75
+Progression (en %): 33.96
+Progression (en %): 34.17
+Progression (en %): 34.38
+Progression (en %): 34.58
+Progression (en %): 34.79
+Progression (en %): 35.00
+Progression (en %): 35.21
+Progression (en %): 35.42
+Progression (en %): 35.62
+Progression (en %): 35.83
+Progression (en %): 36.04
+Progression (en %): 36.25
+Progression (en %): 36.46
+Progression (en %): 36.67
+Progression (en %): 36.88
+Progression (en %): 37.08
+Progression (en %): 37.29
+Progression (en %): 37.50
+Progression (en %): 37.71
+Progression (en %): 37.92
+Progression (en %): 38.12
+Progression (en %): 38.33
+Progression (en %): 38.54
+Progression (en %): 38.75
+Progression (en %): 38.96
+Progression (en %): 39.17
+Progression (en %): 39.38
+Progression (en %): 39.58
+Progression (en %): 39.79
+Progression (en %): 40.00
+Progression (en %): 40.21
+Progression (en %): 40.42
+Progression (en %): 40.62
+Progression (en %): 40.83
+Progression (en %): 41.04
+Progression (en %): 41.25
+Progression (en %): 41.46
+Progression (en %): 41.67
+Progression (en %): 41.88
+Progression (en %): 42.08
+Progression (en %): 42.29
+Progression (en %): 42.50
+Progression (en %): 42.71
+Progression (en %): 42.92
+Progression (en %): 43.12
+Progression (en %): 43.33
+Progression (en %): 43.54
+Progression (en %): 43.75
+Progression (en %): 43.96
+Progression (en %): 44.17
+Progression (en %): 44.38
+Progression (en %): 44.58
+Progression (en %): 44.79
+Progression (en %): 45.00
+Progression (en %): 45.21
+Progression (en %): 45.42
+Progression (en %): 45.62
+Progression (en %): 45.83
+Progression (en %): 46.04
+Progression (en %): 46.25
+Progression (en %): 46.46
+Progression (en %): 46.67
+Progression (en %): 46.88
+Progression (en %): 47.08
+Progression (en %): 47.29
+Progression (en %): 47.50
+Progression (en %): 47.71
+Progression (en %): 47.92
+Progression (en %): 48.12
+Progression (en %): 48.33
+Progression (en %): 48.54
+Progression (en %): 48.75
+Progression (en %): 48.96
+Progression (en %): 49.17
+Progression (en %): 49.38
+Progression (en %): 49.58
+Progression (en %): 49.79
+Progression (en %): 50.00
+Progression (en %): 50.21
+Progression (en %): 50.42
+Progression (en %): 50.62
+Progression (en %): 50.83
+Progression (en %): 51.04
+Progression (en %): 51.25
+Progression (en %): 51.46
+Progression (en %): 51.67
+Progression (en %): 51.88
+Progression (en %): 52.08
+Progression (en %): 52.29
+Progression (en %): 52.50
+Progression (en %): 52.71
+Progression (en %): 52.92
+Progression (en %): 53.12
+Progression (en %): 53.33
+Progression (en %): 53.54
+Progression (en %): 53.75
+Progression (en %): 53.96
+Progression (en %): 54.17
+Progression (en %): 54.38
+Progression (en %): 54.58
+Progression (en %): 54.79
+Progression (en %): 55.00
+Progression (en %): 55.21
+Progression (en %): 55.42
+Progression (en %): 55.62
+Progression (en %): 55.83
+Progression (en %): 56.04
+Progression (en %): 56.25
+Progression (en %): 56.46
+Progression (en %): 56.67
+Progression (en %): 56.88
+Progression (en %): 57.08
+Progression (en %): 57.29
+Progression (en %): 57.50
+Progression (en %): 57.71
+Progression (en %): 57.92
+Progression (en %): 58.12
+Progression (en %): 58.33
+Progression (en %): 58.54
+Progression (en %): 58.75
+Progression (en %): 58.96
+Progression (en %): 59.17
+Progression (en %): 59.38
+Progression (en %): 59.58
+Progression (en %): 59.79
+Progression (en %): 60.00
+Progression (en %): 60.21
+Progression (en %): 60.42
+Progression (en %): 60.62
+Progression (en %): 60.83
+Progression (en %): 61.04
+Progression (en %): 61.25
+Progression (en %): 61.46
+Progression (en %): 61.67
+Progression (en %): 61.88
+Progression (en %): 62.08
+Progression (en %): 62.29
+Progression (en %): 62.50
+Progression (en %): 62.71
+Progression (en %): 62.92
+Progression (en %): 63.12
+Progression (en %): 63.33
+Progression (en %): 63.54
+Progression (en %): 63.75
+Progression (en %): 63.96
+Progression (en %): 64.17
+Progression (en %): 64.38
+Progression (en %): 64.58
+Progression (en %): 64.79
+Progression (en %): 65.00
+Progression (en %): 65.21
+Progression (en %): 65.42
+Progression (en %): 65.62
+Progression (en %): 65.83
+Progression (en %): 66.04
+Progression (en %): 66.25
+Progression (en %): 66.46
+Progression (en %): 66.67
+Progression (en %): 66.88
+Progression (en %): 67.08
+Progression (en %): 67.29
+Progression (en %): 67.50
+Progression (en %): 67.71
+Progression (en %): 67.92
+Progression (en %): 68.12
+Progression (en %): 68.33
+Progression (en %): 68.54
+Progression (en %): 68.75
+Progression (en %): 68.96
+Progression (en %): 69.17
+Progression (en %): 69.38
+Progression (en %): 69.58
+Progression (en %): 69.79
+Progression (en %): 70.00
+Progression (en %): 70.21
+Progression (en %): 70.42
+Progression (en %): 70.62
+Progression (en %): 70.83
+Progression (en %): 71.04
+Progression (en %): 71.25
+Progression (en %): 71.46
+Progression (en %): 71.67
+Progression (en %): 71.88
+Progression (en %): 72.08
+Progression (en %): 72.29
+Progression (en %): 72.50
+Progression (en %): 72.71
+Progression (en %): 72.92
+Progression (en %): 73.12
+Progression (en %): 73.33
+Progression (en %): 73.54
+Progression (en %): 73.75
+Progression (en %): 73.96
+Progression (en %): 74.17
+Progression (en %): 74.38
+Progression (en %): 74.58
+Progression (en %): 74.79
+Progression (en %): 75.00
+Progression (en %): 75.21
+Progression (en %): 75.42
+Progression (en %): 75.62
+Progression (en %): 75.83
+Progression (en %): 76.04
+Progression (en %): 76.25
+Progression (en %): 76.46
+Progression (en %): 76.67
+Progression (en %): 76.88
+Progression (en %): 77.08
+Progression (en %): 77.29
+Progression (en %): 77.50
+Progression (en %): 77.71
+Progression (en %): 77.92
+Progression (en %): 78.12
+Progression (en %): 78.33
+Progression (en %): 78.54
+Progression (en %): 78.75
+Progression (en %): 78.96
+Progression (en %): 79.17
+Progression (en %): 79.38
+Progression (en %): 79.58
+Progression (en %): 79.79
+Progression (en %): 80.00
+Progression (en %): 80.21
+Progression (en %): 80.42
+Progression (en %): 80.62
+Progression (en %): 80.83
+Progression (en %): 81.04
+Progression (en %): 81.25
+Progression (en %): 81.46
+Progression (en %): 81.67
+Progression (en %): 81.88
+Progression (en %): 82.08
+Progression (en %): 82.29
+Progression (en %): 82.50
+Progression (en %): 82.71
+Progression (en %): 82.92
+Progression (en %): 83.12
+Progression (en %): 83.33
+Progression (en %): 83.54
+Progression (en %): 83.75
+Progression (en %): 83.96
+Progression (en %): 84.17
+Progression (en %): 84.38
+Progression (en %): 84.58
+Progression (en %): 84.79
+Progression (en %): 85.00
+Progression (en %): 85.21
+Progression (en %): 85.42
+Progression (en %): 85.62
+Progression (en %): 85.83
+Progression (en %): 86.04
+Progression (en %): 86.25
+Progression (en %): 86.46
+Progression (en %): 86.67
+Progression (en %): 86.88
+Progression (en %): 87.08
+Progression (en %): 87.29
+Progression (en %): 87.50
+Progression (en %): 87.71
+Progression (en %): 87.92
+Progression (en %): 88.12
+Progression (en %): 88.33
+Progression (en %): 88.54
+Progression (en %): 88.75
+Progression (en %): 88.96
+Progression (en %): 89.17
+Progression (en %): 89.38
+Progression (en %): 89.58
+Progression (en %): 89.79
+Progression (en %): 90.00
+Progression (en %): 90.21
+Progression (en %): 90.42
+Progression (en %): 90.62
+Progression (en %): 90.83
+Progression (en %): 91.04
+Progression (en %): 91.25
+Progression (en %): 91.46
+Progression (en %): 91.67
+Progression (en %): 91.88
+Progression (en %): 92.08
+Progression (en %): 92.29
+Progression (en %): 92.50
+Progression (en %): 92.71
+Progression (en %): 92.92
+Progression (en %): 93.12
+Progression (en %): 93.33
+Progression (en %): 93.54
+Progression (en %): 93.75
+Progression (en %): 93.96
+Progression (en %): 94.17
+Progression (en %): 94.38
+Progression (en %): 94.58
+Progression (en %): 94.79
+Progression (en %): 95.00
+Progression (en %): 95.21
+Progression (en %): 95.42
+Progression (en %): 95.62
+Progression (en %): 32.71
+
+Progression (en %): 32.92
+
+Progression (en %): 33.12
+
+Progression (en %): 33.33
+
+Progression (en %): 33.54
+
+Progression (en %): 33.75
+
+Progression (en %): 33.96
+
+Progression (en %): 34.17
+
+Progression (en %): 34.38
+
+Progression (en %): 34.58
+
+Progression (en %): 34.79
+
+Progression (en %): 35.00
+
+Progression (en %): 35.21
+
+Progression (en %): 35.42
+
+Progression (en %): 35.62
+
+Progression (en %): 35.83
+
+Progression (en %): 36.04
+
+Progression (en %): 36.25
+
+Progression (en %): 36.46
+
+Progression (en %): 36.67
+
+Progression (en %): 36.88
+
+Progression (en %): 37.08
+
+Progression (en %): 37.29
+
+Progression (en %): 37.50
+
+Progression (en %): 37.71
+
+Progression (en %): 37.92
+
+Progression (en %): 38.12
+
+Progression (en %): 38.33
+
+Progression (en %): 38.54
+
+Progression (en %): 38.75
+
+Progression (en %): 38.96
+
+Progression (en %): 39.17
+
+Progression (en %): 39.38
+
+Progression (en %): 39.58
+
+Progression (en %): 39.79
+
+Progression (en %): 40.00
+
+Progression (en %): 40.21
+
+Progression (en %): 40.42
+
+Progression (en %): 40.62
+
+Progression (en %): 40.83
+
+Progression (en %): 41.04
+
+Progression (en %): 41.25
+
+Progression (en %): 41.46
+
+Progression (en %): 41.67
+
+Progression (en %): 41.88
+
+Progression (en %): 42.08
+
+Progression (en %): 42.29
+
+Progression (en %): 42.50
+
+Progression (en %): 42.71
+
+Progression (en %): 42.92
+
+Progression (en %): 43.12
+
+Progression (en %): 43.33
+
+Progression (en %): 43.54
+
+Progression (en %): 43.75
+
+Progression (en %): 43.96
+
+Progression (en %): 44.17
+
+Progression (en %): 44.38
+
+Progression (en %): 44.58
+
+Progression (en %): 44.79
+
+Progression (en %): 45.00
+
+Progression (en %): 45.21
+
+Progression (en %): 45.42
+
+Progression (en %): 45.62
+
+Progression (en %): 45.83
+
+Progression (en %): 46.04
+
+Progression (en %): 46.25
+
+Progression (en %): 46.46
+
+Progression (en %): 46.67
+
+Progression (en %): 46.88
+
+Progression (en %): 47.08
+
+Progression (en %): 47.29
+
+Progression (en %): 47.50
+
+Progression (en %): 47.71
+
+Progression (en %): 47.92
+
+Progression (en %): 48.12
+
+Progression (en %): 48.33
+
+Progression (en %): 48.54
+
+Progression (en %): 48.75
+
+Progression (en %): 48.96
+
+Progression (en %): 49.17
+
+Progression (en %): 49.38
+
+Progression (en %): 49.58
+
+Progression (en %): 49.79
+
+Progression (en %): 50.00
+
+Progression (en %): 50.21
+
+Progression (en %): 50.42
+
+Progression (en %): 50.62
+
+Progression (en %): 50.83
+
+Progression (en %): 51.04
+
+Progression (en %): 51.25
+
+Progression (en %): 51.46
+
+Progression (en %): 51.67
+
+Progression (en %): 51.88
+
+Progression (en %): 52.08
+
+Progression (en %): 52.29
+
+Progression (en %): 52.50
+
+Progression (en %): 52.71
+
+Progression (en %): 52.92
+
+Progression (en %): 53.12
+
+Progression (en %): 53.33
+
+Progression (en %): 53.54
+
+Progression (en %): 53.75
+
+Progression (en %): 53.96
+
+Progression (en %): 54.17
+
+Progression (en %): 54.38
+
+Progression (en %): 54.58
+
+Progression (en %): 54.79
+
+Progression (en %): 55.00
+
+Progression (en %): 55.21
+
+Progression (en %): 55.42
+
+Progression (en %): 55.62
+
+Progression (en %): 55.83
+
+Progression (en %): 56.04
+
+Progression (en %): 56.25
+
+Progression (en %): 56.46
+
+Progression (en %): 56.67
+
+Progression (en %): 56.88
+
+Progression (en %): 57.08
+
+Progression (en %): 57.29
+
+Progression (en %): 57.50
+
+Progression (en %): 57.71
+
+Progression (en %): 57.92
+
+Progression (en %): 58.12
+
+Progression (en %): 58.33
+
+Progression (en %): 58.54
+
+Progression (en %): 58.75
+
+Progression (en %): 58.96
+
+Progression (en %): 59.17
+
+Progression (en %): 59.38
+
+Progression (en %): 59.58
+
+Progression (en %): 59.79
+
+Progression (en %): 60.00
+
+Progression (en %): 60.21
+
+Progression (en %): 60.42
+
+Progression (en %): 60.62
+
+Progression (en %): 60.83
+
+Progression (en %): 61.04
+
+Progression (en %): 61.25
+
+Progression (en %): 61.46
+
+Progression (en %): 61.67
+
+Progression (en %): 61.88
+
+Progression (en %): 62.08
+
+Progression (en %): 62.29
+
+Progression (en %): 62.50
+
+Progression (en %): 62.71
+
+Progression (en %): 62.92
+
+Progression (en %): 63.12
+
+Progression (en %): 63.33
+
+Progression (en %): 63.54
+
+Progression (en %): 63.75
+
+Progression (en %): 63.96
+
+Progression (en %): 64.17
+
+Progression (en %): 64.38
+
+Progression (en %): 64.58
+
+Progression (en %): 64.79
+
+Progression (en %): 65.00
+
+Progression (en %): 65.21
+
+Progression (en %): 65.42
+
+Progression (en %): 65.62
+
+Progression (en %): 65.83
+
+Progression (en %): 66.04
+
+Progression (en %): 66.25
+
+Progression (en %): 66.46
+
+Progression (en %): 66.67
+
+Progression (en %): 66.88
+
+Progression (en %): 67.08
+
+Progression (en %): 67.29
+
+Progression (en %): 67.50
+
+Progression (en %): 67.71
+
+Progression (en %): 67.92
+
+Progression (en %): 68.12
+
+Progression (en %): 68.33
+
+Progression (en %): 68.54
+
+Progression (en %): 68.75
+
+Progression (en %): 68.96
+
+Progression (en %): 69.17
+
+Progression (en %): 69.38
+
+Progression (en %): 69.58
+
+Progression (en %): 69.79
+
+Progression (en %): 70.00
+
+Progression (en %): 70.21
+
+Progression (en %): 70.42
+
+Progression (en %): 70.62
+
+Progression (en %): 70.83
+
+Progression (en %): 71.04
+
+Progression (en %): 71.25
+
+Progression (en %): 71.46
+
+Progression (en %): 71.67
+
+Progression (en %): 71.88
+
+Progression (en %): 72.08
+
+Progression (en %): 72.29
+
+Progression (en %): 72.50
+
+Progression (en %): 72.71
+
+Progression (en %): 72.92
+
+Progression (en %): 73.12
+
+Progression (en %): 73.33
+
+Progression (en %): 73.54
+
+Progression (en %): 73.75
+
+Progression (en %): 73.96
+
+Progression (en %): 74.17
+
+Progression (en %): 74.38
+
+Progression (en %): 74.58
+
+Progression (en %): 74.79
+
+Progression (en %): 75.00
+
+Progression (en %): 75.21
+
+Progression (en %): 75.42
+
+Progression (en %): 75.62
+
+Progression (en %): 75.83
+
+Progression (en %): 76.04
+
+Progression (en %): 76.25
+
+Progression (en %): 76.46
+
+Progression (en %): 76.67
+
+Progression (en %): 76.88
+
+Progression (en %): 77.08
+
+Progression (en %): 77.29
+
+Progression (en %): 77.50
+
+Progression (en %): 77.71
+
+Progression (en %): 77.92
+
+Progression (en %): 78.12
+
+Progression (en %): 78.33
+
+Progression (en %): 78.54
+
+Progression (en %): 78.75
+
+Progression (en %): 78.96
+
+Progression (en %): 79.17
+
+Progression (en %): 79.38
+
+Progression (en %): 79.58
+
+Progression (en %): 79.79
+
+Progression (en %): 80.00
+
+Progression (en %): 80.21
+
+Progression (en %): 80.42
+
+Progression (en %): 80.62
+
+Progression (en %): 80.83
+
+Progression (en %): 81.04
+
+Progression (en %): 81.25
+
+Progression (en %): 81.46
+
+Progression (en %): 81.67
+
+Progression (en %): 81.88
+
+Progression (en %): 82.08
+
+Progression (en %): 82.29
+
+Progression (en %): 82.50
+
+Progression (en %): 82.71
+
+Progression (en %): 82.92
+
+Progression (en %): 83.12
+
+Progression (en %): 83.33
+
+Progression (en %): 83.54
+
+Progression (en %): 83.75
+
+Progression (en %): 83.96
+
+Progression (en %): 84.17
+
+Progression (en %): 84.38
+
+Progression (en %): 84.58
+
+Progression (en %): 84.79
+
+Progression (en %): 85.00
+
+Progression (en %): 85.21
+
+Progression (en %): 85.42
+
+Progression (en %): 85.62
+
+Progression (en %): 85.83
+
+Progression (en %): 86.04
+
+Progression (en %): 86.25
+
+Progression (en %): 86.46
+
+Progression (en %): 86.67
+
+Progression (en %): 86.88
+
+Progression (en %): 87.08
+
+Progression (en %): 87.29
+
+Progression (en %): 87.50
+
+Progression (en %): 87.71
+
+Progression (en %): 87.92
+
+Progression (en %): 88.12
+
+Progression (en %): 88.33
+
+Progression (en %): 88.54
+
+Progression (en %): 88.75
+
+Progression (en %): 88.96
+
+Progression (en %): 89.17
+
+Progression (en %): 89.38
+
+Progression (en %): 89.58
+
+Progression (en %): 89.79
+
+Progression (en %): 90.00
+
+Progression (en %): 90.21
+
+Progression (en %): 90.42
+
+Progression (en %): 90.62
+
+Progression (en %): 90.83
+
+Progression (en %): 91.04
+
+Progression (en %): 91.25
+
+Progression (en %): 91.46
+
+Progression (en %): 91.67
+
+Progression (en %): 91.88
+
+Progression (en %): 92.08
+
+Progression (en %): 92.29
+
+Progression (en %): 92.50
+
+Progression (en %): 92.71
+
+Progression (en %): 92.92
+
+Progression (en %): 93.12
+
+Progression (en %): 93.33
+
+Progression (en %): 93.54
+
+Progression (en %): 93.75
+
+Progression (en %): 93.96
+
+Progression (en %): 94.17
+
+Progression (en %): 94.38
+
+Progression (en %): 94.58
+
+Progression (en %): 94.79
+
+Progression (en %): 95.00
+
+Progression (en %): 95.21
+
+Progression (en %): 95.42
+
+Progression (en %): 95.62
+
+Progression (en %): 95.83
+Progression (en %): 96.04
+Progression (en %): 96.25
+Progression (en %): 96.46
+Progression (en %): 96.67
+Progression (en %): 96.88
+Progression (en %): 97.08
+Progression (en %): 97.29
+Progression (en %): 97.50
+Progression (en %): 97.71
+Progression (en %): 97.92
+Progression (en %): 98.12
+Progression (en %): 98.33
+Progression (en %): 98.54
+Progression (en %): 98.75
+Progression (en %): 98.96
+Progression (en %): 99.17
+Progression (en %): 99.38
+Progression (en %): 99.58
+Progression (en %): 99.79
+Progression (in %): Finishing... 100 % 
+V) Output
+Done... Exiting program...
+Progression (en %): 95.83
+
+Progression (en %): 96.04
+
+Progression (en %): 96.25
+
+Progression (en %): 96.46
+
+Progression (en %): 96.67
+
+Progression (en %): 96.88
+
+Progression (en %): 97.08
+
+Progression (en %): 97.29
+
+Progression (en %): 97.50
+
+Progression (en %): 97.71
+
+Progression (en %): 97.92
+
+Progression (en %): 98.12
+
+Progression (en %): 98.33
+
+Progression (en %): 98.54
+
+Progression (en %): 98.75
+
+Progression (en %): 98.96
+
+Progression (en %): 99.17
+
+Progression (en %): 99.38
+
+Progression (en %): 99.58
+
+Progression (en %): 99.79
+
+
+Minimal mass found : 0.0 solMass
+Maximal mass found : 9.117602618774859e-06 solMass
+/bin/mv: inter-device move failed: './test' to '/data/mrabenanahary/Output/test/./test'; unable to remove target: Directory not empty
+srun: error: tycho63: task 0: Exited with exit code 1

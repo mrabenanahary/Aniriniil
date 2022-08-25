@@ -1,0 +1,58 @@
+3216516
+tycho63
+/scratch/mrabenanahary/run.3216516.PVi125dgnP480t1e4yrs_P31yrs_fi0v995_fj0v995_dz_1v0kps
+::::::::::::::
+test_input_i125_MV.par
+::::::::::::::
+geo_angle_i : 2.181661564992912
+frame_the_box : False
+nphi : 480
+voxels_dz : 1.0
+voxels_nGamma_cells : 474
+voxels_z_min : -100.0 #km/s
+voxelling_mode : Voxel #
+voxelling_method : 'railgun'     # bazooka
+voxelling_scheme : 'progressive' # brute
+input_file_vtk :  "./Jet_CC_0102.vtu"
+output_file_vtk: "./PVi125dgnP480t1e4yrs_P31yrs_fi0v995_fj0v995_dz_1v0kps"
+output_file_vtk_mv: "./PVi125dgnP480t1e4yrs_P31yrs_fi0v995_fj0v995_dz_1v0kps"
+output_mv_spectrum : True
+threshold_f_ism : 0.995
+threshold_f_jet : 0.995
+
+frame_the_box : False
+plotting  :  True
+plotting_box  :  False
+plot_use_sns : [False,True,True,False]
+plot_sns_palette : ['tab10','tab10','tab10','tab10'] #if plot_use_sns == True
+plot_sns_palette_n : [20,10,10,10]
+plot_mpl_palette : ['viridis','tab10','tab10','viridis'] #if plot_use_sns == False
+plot_mpl_palette_n : [10,10,10,10]
+variable_to_plot : ['number density','v1','v2','p']
+plot_title : ['Denser flattened singular core (PCJ-RW)','Denser flattened singular core (PCJ-RW)','Denser flattened singular core (PCJ-RW)','Denser flattened singular core (PCJ-RW)']
+plot_title_pad : [30.0,30.0,30.0,30.0]
+plot_fontsize_title : [40,40,40,40]
+#variable_label : ['$\mathrm{\rho}$ ($\mathrm{g~cm^{-3}}$)','$\mathrm{v_R}$ ($\mathrm{km~s^{-1}}$)','$\mathrm{v_Z}$ ($\mathrm{km~s^{-1}}$)','$\mathrm{p}$ ($\mathrm{g~cm^{-3}}$)']
+variable_label : ['$\mathrm{\rho}$ ($\mathrm{g~cm^{-3}}$)','$\mathrm{v_R}$ ($\mathrm{km~s^{-1}}$)','$\mathrm{v_Z}$ ($\mathrm{km~s^{-1}}$)','$\mathrm{p}$ ($\mathrm{g~cm^{-3}}$)']
+plot_height  :  [8.0,8.0,8.0,8.0]
+plot_width  :  [8.0,8.0,8.0,8.0]
+plot_xmin : [0,0,0,0] #in 1e17 cm
+plot_xmax : [0.6,0.6,0.6,0.6] #in 1e17 cm
+plot_dr  :  [0.2,0.2,0.2,0.2] #in 1e17 cm
+plot_ymin : [0,0,0,0] #in 1e17 cm
+plot_ymax : [1.35,1.35,1.35,1.35] #in 1e17 cm
+plot_vmin : [3.0e-2,0,0,1.330656086502311e-17]
+plot_vmax : [1.0e+7,50,50,2.1888496348765343e-7]
+plot_fontsize  :  [40,40,40,40]
+plot_fontsize_cbr  :  [20,20,20,20]
+plot_fontsize_global  :  [25,25,25,25]
+plot_colormap  :  ['my_cmap','turbo','turbo','my_cmap']
+plot_darken_factor  :  [0.9,0.9,0.9,0.9]
+plot_rect_lw : [5,3]
+Traceback (most recent call last):
+  File "geoCompiler.py", line 20, in <module>
+    import vtk as v
+ModuleNotFoundError: No module named 'vtk'
+srun: error: tycho63: task 0: Exited with exit code 1
+srun: error: tycho63: task 0: Exited with exit code 1
+/bin/cp: cannot stat './PVi125dgnP480t1e4yrs_P31yrs_fi0v995_fj0v995_dz_1v0kps': No such file or directory

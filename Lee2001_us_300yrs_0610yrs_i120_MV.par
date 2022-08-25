@@ -1,0 +1,15 @@
+geo_angle_i : 2.0943951023931953
+frame_the_box : False
+nphi : 480
+voxels_dz : 1.0
+voxels_nGamma_cells : 120 #474
+voxels_z_min : -100.0 #km/s
+voxelling_mode : Voxel #
+voxelling_method : 'railgun'     # bazooka
+voxelling_scheme : 'progressive' # brute
+input_file_vtk :  "./Lee2001_us_300yrs_0610.vtu"
+output_file_vtk: "./Lee2001_us_300yrs_0610_i120dgnP480"
+output_file_vtk_mv: "./Lee2001_us_300yrs_0610_i120dgnP480"
+output_mv_spectrum : True
+threshold_f_ism : 0.995
+threshold_f_jet : 0.995

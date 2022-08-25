@@ -1,0 +1,180 @@
+mkdir: cannot create directory ‘PVi125dgnP480t1e4yrs_P31yrs_fi0v995_fj0v995_dz_1v0kps’: File exists
+3216526
+tycho63
+/scratch/mrabenanahary/run.3216526.PVi125dgnP480t1e4yrs_P31yrs_fi0v995_fj0v995_dz_1v0kps
+::::::::::::::
+test_input_i125_MV.par
+::::::::::::::
+geo_angle_i : 2.181661564992912
+frame_the_box : False
+nphi : 480
+voxels_dz : 1.0
+voxels_nGamma_cells : 474
+voxels_z_min : -100.0 #km/s
+voxelling_mode : Voxel #
+voxelling_method : 'railgun'     # bazooka
+voxelling_scheme : 'progressive' # brute
+input_file_vtk :  "./Lee2001_s_0102.vtu"
+output_file_vtk: "./PVi125dgnP480t1e4yrs_P31yrs_fi0v995_fj0v995_dz_1v0kps"
+output_file_vtk_mv: "./PVi125dgnP480t1e4yrs_P31yrs_fi0v995_fj0v995_dz_1v0kps"
+output_mv_spectrum : True
+threshold_f_ism : 0.995
+threshold_f_jet : 0.995
+
+frame_the_box : False
+plotting  :  False
+plotting_box  :  False
+plot_use_sns : [False,True,True,False]
+plot_sns_palette : ['tab10','tab10','tab10','tab10'] #if plot_use_sns == True
+plot_sns_palette_n : [20,10,10,10]
+plot_mpl_palette : ['viridis','tab10','tab10','viridis'] #if plot_use_sns == False
+plot_mpl_palette_n : [10,10,10,10]
+variable_to_plot : ['number density','v1','v2','p']
+plot_title : ['Denser flattened singular core (PCJ-RW)','Denser flattened singular core (PCJ-RW)','Denser flattened singular core (PCJ-RW)','Denser flattened singular core (PCJ-RW)']
+plot_title_pad : [30.0,30.0,30.0,30.0]
+plot_fontsize_title : [40,40,40,40]
+#variable_label : ['$\mathrm{\rho}$ ($\mathrm{g~cm^{-3}}$)','$\mathrm{v_R}$ ($\mathrm{km~s^{-1}}$)','$\mathrm{v_Z}$ ($\mathrm{km~s^{-1}}$)','$\mathrm{p}$ ($\mathrm{g~cm^{-3}}$)']
+variable_label : ['$\mathrm{\rho}$ ($\mathrm{g~cm^{-3}}$)','$\mathrm{v_R}$ ($\mathrm{km~s^{-1}}$)','$\mathrm{v_Z}$ ($\mathrm{km~s^{-1}}$)','$\mathrm{p}$ ($\mathrm{g~cm^{-3}}$)']
+plot_height  :  [8.0,8.0,8.0,8.0]
+plot_width  :  [8.0,8.0,8.0,8.0]
+plot_xmin : [0,0,0,0] #in 1e17 cm
+plot_xmax : [0.6,0.6,0.6,0.6] #in 1e17 cm
+plot_dr  :  [0.2,0.2,0.2,0.2] #in 1e17 cm
+plot_ymin : [0,0,0,0] #in 1e17 cm
+plot_ymax : [1.35,1.35,1.35,1.35] #in 1e17 cm
+plot_vmin : [3.0e-2,0,0,1.330656086502311e-17]
+plot_vmax : [1.0e+7,50,50,2.1888496348765343e-7]
+plot_fontsize  :  [40,40,40,40]
+plot_fontsize_cbr  :  [20,20,20,20]
+plot_fontsize_global  :  [25,25,25,25]
+plot_colormap  :  ['my_cmap','turbo','turbo','my_cmap']
+plot_darken_factor  :  [0.9,0.9,0.9,0.9]
+plot_rect_lw : [5,3]
+0) PARAMETRES
+Reading parameters...
+All parameters are...
+End of reading parameters...
+I) Read and get touch on .vtu file data and points in python
+Reading input...
+[0m[31m2022-04-26 17:47:05.149 (   8.909s) [        8BF50700]       vtkXMLReader.cxx:306    ERR| vtkXMLUnstructuredGridReader (0x562aa89392b0): Error opening file ./Lee2001_s_0102.vtu[0m
+[0m[31m2022-04-26 17:47:05.149 (   8.909s) [        8BF50700]       vtkExecutive.cxx:752    ERR| vtkCompositeDataPipeline (0x562aa8ce4df0): Algorithm vtkXMLUnstructuredGridReader(0x562aa89392b0) returned failure for request: vtkInformation (0x562aa91045b0)
+  Debug: Off
+  Modified Time: 2337815
+  Reference Count: 1
+  Registered Events: (none)
+  Request: REQUEST_INFORMATION
+  ALGORITHM_AFTER_FORWARD: 1
+  FORWARD_DIRECTION: 0
+
+[0m
+Done...
+read.py is being imported.
+alpha_ = 2
+bound_offset_frac = 1.0
+Delta_ = 1
+dummy_test = {}
+each_percent = 1.0
+each_percent_frac = 0.01
+epsilon_tol = 1e-06
+fac_dx = 0.5
+fac_dy = 0.5
+fac_dz = 0.5
+floor_ism = True
+floor_jet = True
+flux_surface_center = [[0, 2.6875e+16, 0]]
+flux_surface_r_z_inclination = [[1.4e+16, 0.0]]
+frame_ism = True
+frame_jet = True
+frame_the_box = False
+Gamma_ = 0
+geo_2D_attribute_mode = cell
+geo_angle_i = 2.181661564992912
+geo_rho_2D = None
+input_file_vtk = ./Lee2001_s_0102.vtu
+input_par = ./test_input_i125_MV.par
+nphi = 480
+nphi_choice_msg = You choosed nphi=60 as an even integer.
+Symmetry in the data cube after voxelling is obtained for i=+/- pi/2 !
+number_of_voxels = 56169
+output_file_vtk = ./PVi125dgnP480t1e4yrs_P31yrs_fi0v995_fj0v995_dz_1v0kps
+output_file_vtk_mv = ./PVi125dgnP480t1e4yrs_P31yrs_fi0v995_fj0v995_dz_1v0kps
+output_impulsion_ascii = ./data.dat
+output_mv_spectrum = True
+phi_ = 2
+plot_colormap = ['my_cmap', 'turbo', 'turbo', 'my_cmap']
+plot_darken_factor = [0.9, 0.9, 0.9, 0.9]
+plot_dr = [0.2, 0.2, 0.2, 0.2]
+plot_fontsize = [40, 40, 40, 40]
+plot_fontsize_cbr = [20, 20, 20, 20]
+plot_fontsize_global = [25, 25, 25, 25]
+plot_fontsize_title = [40, 40, 40, 40]
+plot_height = [8.0, 8.0, 8.0, 8.0]
+plot_mpl_palette = ['viridis', 'tab10', 'tab10', 'viridis']
+plot_mpl_palette_n = [10, 10, 10, 10]
+plot_rect_lw = [5, 3]
+plot_sns_palette = ['tab10', 'tab10', 'tab10', 'tab10']
+plot_sns_palette_n = [20, 10, 10, 10]
+plot_title = ['Denser flattened singular core (PCJ-RW)', 'Denser flattened singular core (PCJ-RW)', 'Denser flattened singular core (PCJ-RW)', 'Denser flattened singular core (PCJ-RW)']
+plot_title_pad = [30.0, 30.0, 30.0, 30.0]
+plot_use_sns = [False, True, True, False]
+plot_vmax = [10000000.0, 50, 50, 2.1888496348765343e-07]
+plot_vmin = [0.03, 0, 0, 1.330656086502311e-17]
+plot_width = [8.0, 8.0, 8.0, 8.0]
+plot_xmax = [0.6, 0.6, 0.6, 0.6]
+plot_xmin = [0, 0, 0, 0]
+plot_ymax = [1.35, 1.35, 1.35, 1.35]
+plot_ymin = [0, 0, 0, 0]
+plotting = False
+plotting_box = False
+possible_geo_2D_attribute_mode = ['cell']
+r_ = 0
+rho_ism_fac = 1.0
+rho_jet_fac = 1.0
+rhoTracers = {'ISM': [0, 0], 'jet': [0, 0]}
+threshold_f_ism = 0.995
+threshold_f_jet = 0.995
+unit_angle_i = rad
+unit_mass_flux_output = solMass / yr
+unit_masse = solMass
+unit_momentum_flux_output = km solMass / (s yr)
+unit_output_v = km / s
+unit_volume = AU3
+unit_voxels_dz = km / s
+unit_voxels_z_max = km / s
+unit_voxels_z_min = km / s
+variable_label = ['$\\mathrm{\\rho}$ ($\\mathrm{g~cm^{-3}}$)', '$\\mathrm{v_R}$ ($\\mathrm{km~s^{-1}}$)', '$\\mathrm{v_Z}$ ($\\mathrm{km~s^{-1}}$)', '$\\mathrm{p}$ ($\\mathrm{g~cm^{-3}}$)']
+variable_to_plot = ['number density', 'v1', 'v2', 'p']
+velocityVector = {'v1': 0, 'v2': 0, 'v3': 0}
+voxelling_method = railgun
+voxelling_method_list = ['bazooka', 'railgun']
+voxelling_mode = Voxel
+voxelling_mode_list = ['Voxel', 'Flow_rates']
+voxelling_scheme = progressive
+voxelling_scheme_list = {'bazooka': ['brute'], 'railgun': ['progressive']}
+voxels_dz = 100000.0
+voxels_nGamma_cells = 474
+voxels_z_max = 15000000.0
+voxels_z_min = -10000000.0
+x_ = 0
+x_frame = 0
+x_frame_max = [1e+16, 2e+16]
+x_frame_min = [0.0, 0.0]
+x_max = 9.799999999999998e+16
+y_ = 1
+y_frame = 1
+y_frame_max = [1.45e+17, 1.45e+17]
+y_frame_min = [0.0, 0.0]
+y_max = 1.5091999999999997e+17
+z_cart_ = 2
+z_cyl_ = 1
+Traceback (most recent call last):
+  File "geoCompiler.py", line 130, in <module>
+    (read.extract(CellsData, 'v1', attribute_mode=my_variables.geo_2D_attribute_mode),
+  File "/scratch/mrabenanahary/run.3216526.PVi125dgnP480t1e4yrs_P31yrs_fi0v995_fj0v995_dz_1v0kps/read.py", line 45, in extract
+    return vtk_to_numpy(vtk_values)
+  File "/obs/mrabenanahary/.local/lib/python3.7/site-packages/vtkmodules/util/numpy_support.py", line 215, in vtk_to_numpy
+    typ = vtk_array.GetDataType()
+AttributeError: 'NoneType' object has no attribute 'GetDataType'
+srun: error: tycho63: task 0: Exited with exit code 1
+/bin/cp: failed to close '/data/mrabenanahary/Output/PVi125dgnP480t1e4yrs_P31yrs_fi0v995_fj0v995_dz_1v0kps/./slurm-PVi125dgnP480t1e4yrs_P31yrs_fi0v995_fj0v995_dz_1v0kps-3216526.out': Disk quota exceeded
+srun: error: tycho63: task 0: Exited with exit code 1

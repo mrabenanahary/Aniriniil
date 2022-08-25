@@ -1,0 +1,686 @@
+mkdir: cannot create directory ‘test’: File exists
+3214040
+tycho63
+/scratch/mrabenanahary/run.3214040.test
+::::::::::::::
+test_input.par
+::::::::::::::
+geo_angle_i : 1.6580627893946132
+frame_the_box : False
+nphi : 480 #24
+voxels_dz : 1.0
+voxels_nGamma_cells : 120 #8 #474
+voxels_z_min : -100.0 #km/s
+voxelling_mode : Voxel #
+voxelling_method : 'bazooka'#'railgun'     # bazooka
+voxelling_scheme : 'brute'#'progressive' # brute
+input_file_vtk :  "./Jet_CC_Shang06_0296.vtu"
+output_file_vtk: "./test"
+output_file_vtk_mv: "./test_mv"
+output_mv_spectrum : True
+threshold_f_ism : 0.995
+threshold_f_jet : 0.995
+
+
+frame_the_box : True
+x_frame_min  :  [0.0,0.0] #in cm
+x_frame_max  :  [1.0e+16,2.0e+16] #in cm
+y_frame_min  :  [0.0,0.0] #in cm
+y_frame_max  :  [1.45e+17,1.45e+17] #in cm
+
+plotting  :  True
+plotting_box  :  True
+plot_use_sns : [False,True,True,False]
+plot_sns_palette : ['tab10','tab10','tab10','tab10'] #if plot_use_sns == True
+plot_sns_palette_n : [20,10,10,10]
+plot_mpl_palette : ['viridis','tab10','tab10','viridis'] #if plot_use_sns == False
+plot_mpl_palette_n : [10,10,10,10]
+variable_to_plot : ['number density','v1','v2','p']
+plot_title : ['Denser flattened singular core (PCJ-RW)','Denser flattened singular core (PCJ-RW)','Denser flattened singular core (PCJ-RW)','Denser flattened singular core (PCJ-RW)']
+plot_title_pad : [30.0,30.0,30.0,30.0]
+plot_fontsize_title : [40,40,40,40]
+#variable_label : ['$\mathrm{\rho}$ ($\mathrm{g~cm^{-3}}$)','$\mathrm{v_R}$ ($\mathrm{km~s^{-1}}$)','$\mathrm{v_Z}$ ($\mathrm{km~s^{-1}}$)','$\mathrm{p}$ ($\mathrm{g~cm^{-3}}$)']
+variable_label : ['$\mathrm{\rho}$ ($\mathrm{g~cm^{-3}}$)','$\mathrm{v_R}$ ($\mathrm{km~s^{-1}}$)','$\mathrm{v_Z}$ ($\mathrm{km~s^{-1}}$)','$\mathrm{p}$ ($\mathrm{g~cm^{-3}}$)']
+plot_height  :  [8.0,8.0,8.0,8.0]
+plot_width  :  [8.0,8.0,8.0,8.0]
+plot_xmin : [0,0,0,0] #in 1e17 cm
+plot_xmax : [0.6,0.6,0.6,0.6] #in 1e17 cm
+plot_dr  :  [0.2,0.2,0.2,0.2] #in 1e17 cm
+plot_ymin : [0,0,0,0] #in 1e17 cm
+plot_ymax : [1.35,1.35,1.35,1.35] #in 1e17 cm
+plot_vmin : [3.0e-2,0,0,1.330656086502311e-17]
+plot_vmax : [1.0e+7,50,50,2.1888496348765343e-7]
+plot_fontsize  :  [40,40,40,40]
+plot_fontsize_cbr  :  [20,20,20,20]
+plot_fontsize_global  :  [25,25,25,25]
+plot_colormap  :  ['my_cmap','turbo','turbo','my_cmap']
+plot_darken_factor  :  [0.9,0.9,0.9,0.9]
+plot_rect_lw : [5,3]
+0) PARAMETRES
+Reading parameters...
+All parameters are...
+End of reading parameters...
+I) Read and get touch on .vtu file data and points in python
+Reading input...
+PLotting figures: Begins...
+>>> Fig. 1 of 4: Plotting number density...
+>>> Fig. 2 of 4: Plotting v1...
+>>> Fig. 3 of 4: Plotting v2...
+>>> Fig. 4 of 4: Plotting p...
+Plotting figures : Done...
+Done...
+II) 2D-part computations
+Done within 1 step...
+III) 3D-part computations
+read.py is being imported.
+alpha_ = 2
+bound_offset_frac = 1.0
+Delta_ = 1
+dummy_test = {}
+each_percent = 1.0
+each_percent_frac = 0.01
+epsilon_tol = 1e-06
+fac_dx = 0.5
+fac_dy = 0.5
+fac_dz = 0.5
+floor_ism = True
+floor_jet = True
+flux_surface_center = [[0, 2.6875e+16, 0]]
+flux_surface_r_z_inclination = [[1.4e+16, 0.0]]
+frame_ism = True
+frame_jet = True
+frame_the_box = True
+Gamma_ = 0
+geo_2D_attribute_mode = cell
+geo_angle_i = 1.6580627893946132
+geo_rho_2D = None
+input_file_vtk = ./Jet_CC_Shang06_0296.vtu
+input_par = ./test_input.par
+nphi = 480
+nphi_choice_msg = You choosed nphi=60 as an even integer.
+Symmetry in the data cube after voxelling is obtained for i=+/- pi/2 !
+number_of_voxels = 56169
+output_file_vtk = ./test
+output_file_vtk_mv = ./test_mv
+output_impulsion_ascii = ./data.dat
+output_mv_spectrum = True
+phi_ = 2
+plot_colormap = ['my_cmap', 'turbo', 'turbo', 'my_cmap']
+plot_darken_factor = [0.9, 0.9, 0.9, 0.9]
+plot_dr = [0.2, 0.2, 0.2, 0.2]
+plot_fontsize = [40, 40, 40, 40]
+plot_fontsize_cbr = [20, 20, 20, 20]
+plot_fontsize_global = [25, 25, 25, 25]
+plot_fontsize_title = [40, 40, 40, 40]
+plot_height = [8.0, 8.0, 8.0, 8.0]
+plot_mpl_palette = ['viridis', 'tab10', 'tab10', 'viridis']
+plot_mpl_palette_n = [10, 10, 10, 10]
+plot_rect_lw = [5, 3]
+plot_sns_palette = ['tab10', 'tab10', 'tab10', 'tab10']
+plot_sns_palette_n = [20, 10, 10, 10]
+plot_title = ['Denser flattened singular core (PCJ-RW)', 'Denser flattened singular core (PCJ-RW)', 'Denser flattened singular core (PCJ-RW)', 'Denser flattened singular core (PCJ-RW)']
+plot_title_pad = [30.0, 30.0, 30.0, 30.0]
+plot_use_sns = [False, True, True, False]
+plot_vmax = [10000000.0, 50, 50, 2.1888496348765343e-07]
+plot_vmin = [0.03, 0, 0, 1.330656086502311e-17]
+plot_width = [8.0, 8.0, 8.0, 8.0]
+plot_xmax = [0.6, 0.6, 0.6, 0.6]
+plot_xmin = [0, 0, 0, 0]
+plot_ymax = [1.35, 1.35, 1.35, 1.35]
+plot_ymin = [0, 0, 0, 0]
+plotting = True
+plotting_box = True
+possible_geo_2D_attribute_mode = ['cell']
+r_ = 0
+rho_ism_fac = 1.0
+rho_jet_fac = 1.0
+rhoTracers = {'ISM': [0, 0], 'jet': [0, 0]}
+threshold_f_ism = 0.995
+threshold_f_jet = 0.995
+unit_angle_i = rad
+unit_mass_flux_output = solMass / yr
+unit_masse = solMass
+unit_momentum_flux_output = km solMass / (s yr)
+unit_output_v = km / s
+unit_volume = AU3
+unit_voxels_dz = km / s
+unit_voxels_z_max = km / s
+unit_voxels_z_min = km / s
+variable_label = ['$\\mathrm{\\rho}$ ($\\mathrm{g~cm^{-3}}$)', '$\\mathrm{v_R}$ ($\\mathrm{km~s^{-1}}$)', '$\\mathrm{v_Z}$ ($\\mathrm{km~s^{-1}}$)', '$\\mathrm{p}$ ($\\mathrm{g~cm^{-3}}$)']
+variable_to_plot = ['number density', 'v1', 'v2', 'p']
+velocityVector = {'v1': 0, 'v2': 0, 'v3': 0}
+voxelling_method = bazooka
+voxelling_method_list = ['bazooka', 'railgun']
+voxelling_mode = Voxel
+voxelling_mode_list = ['Voxel', 'Flow_rates']
+voxelling_scheme = brute
+voxelling_scheme_list = {'bazooka': ['brute'], 'railgun': ['progressive']}
+voxels_dz = 100000.0
+voxels_nGamma_cells = 120
+voxels_z_max = 15000000.0
+voxels_z_min = -10000000.0
+x_ = 0
+x_frame = 0
+x_frame_max = [1e+16, 2e+16]
+x_frame_min = [0.0, 0.0]
+x_max = 9.799999999999998e+16
+y_ = 1
+y_frame = 1
+y_frame_max = [1.45e+17, 1.45e+17]
+y_frame_min = [0.0, 0.0]
+y_max = 1.5091999999999997e+17
+z_cart_ = 2
+z_cyl_ = 1
+[(281600,), (281600,), (281600,)]
+[(281600,), (281600,)]
+Doing step 1 over 1 with voxelling_method : 'bazooka'...
+Progression : 0.00 % --> point n° : 0 
+Progression : 0.21 % --> point n° : 281600 
+Progression : 0.42 % --> point n° : 563200 
+Progression : 0.62 % --> point n° : 844800 
+Progression : 0.83 % --> point n° : 1126400 
+Progression : 1.04 % --> point n° : 1408000 
+Progression : 1.25 % --> point n° : 1689600 
+Progression : 1.46 % --> point n° : 1971200 
+Progression : 1.67 % --> point n° : 2252800 
+Progression : 1.88 % --> point n° : 2534400 
+Progression : 2.08 % --> point n° : 2816000 
+Progression : 2.29 % --> point n° : 3097600 
+Progression : 2.50 % --> point n° : 3379200 
+Progression : 2.71 % --> point n° : 3660800 
+Progression : 2.92 % --> point n° : 3942400 
+Progression : 3.12 % --> point n° : 4224000 
+Progression : 3.33 % --> point n° : 4505600 
+Progression : 3.54 % --> point n° : 4787200 
+Progression : 3.75 % --> point n° : 5068800 
+Progression : 3.96 % --> point n° : 5350400 
+Progression : 4.17 % --> point n° : 5632000 
+Progression : 4.38 % --> point n° : 5913600 
+Progression : 4.58 % --> point n° : 6195200 
+Progression : 4.79 % --> point n° : 6476800 
+Progression : 5.00 % --> point n° : 6758400 
+Progression : 5.21 % --> point n° : 7040000 
+Progression : 5.42 % --> point n° : 7321600 
+Progression : 5.62 % --> point n° : 7603200 
+Progression : 5.83 % --> point n° : 7884800 
+Progression : 6.04 % --> point n° : 8166400 
+Progression : 6.25 % --> point n° : 8448000 
+Progression : 6.46 % --> point n° : 8729600 
+Progression : 6.67 % --> point n° : 9011200 
+Progression : 6.88 % --> point n° : 9292800 
+Progression : 7.08 % --> point n° : 9574400 
+Progression : 7.29 % --> point n° : 9856000 
+Progression : 7.50 % --> point n° : 10137600 
+Progression : 7.71 % --> point n° : 10419200 
+Progression : 7.92 % --> point n° : 10700800 
+Progression : 8.12 % --> point n° : 10982400 
+Progression : 8.33 % --> point n° : 11264000 
+Progression : 8.54 % --> point n° : 11545600 
+Progression : 8.75 % --> point n° : 11827200 
+Progression : 8.96 % --> point n° : 12108800 
+Progression : 9.17 % --> point n° : 12390400 
+Progression : 9.38 % --> point n° : 12672000 
+Progression : 9.58 % --> point n° : 12953600 
+Progression : 9.79 % --> point n° : 13235200 
+Progression : 10.00 % --> point n° : 13516800 
+Progression : 10.21 % --> point n° : 13798400 
+Progression : 10.42 % --> point n° : 14080000 
+Progression : 10.62 % --> point n° : 14361600 
+Progression : 10.83 % --> point n° : 14643200 
+Progression : 11.04 % --> point n° : 14924800 
+Progression : 11.25 % --> point n° : 15206400 
+Progression : 11.46 % --> point n° : 15488000 
+Progression : 11.67 % --> point n° : 15769600 
+Progression : 11.88 % --> point n° : 16051200 
+Progression : 12.08 % --> point n° : 16332800 
+Progression : 12.29 % --> point n° : 16614400 
+Progression : 12.50 % --> point n° : 16896000 
+Progression : 12.71 % --> point n° : 17177600 
+Progression : 12.92 % --> point n° : 17459200 
+Progression : 13.12 % --> point n° : 17740800 
+Progression : 13.33 % --> point n° : 18022400 
+Progression : 13.54 % --> point n° : 18304000 
+Progression : 13.75 % --> point n° : 18585600 
+Progression : 13.96 % --> point n° : 18867200 
+Progression : 14.17 % --> point n° : 19148800 
+Progression : 14.38 % --> point n° : 19430400 
+Progression : 14.58 % --> point n° : 19712000 
+Progression : 14.79 % --> point n° : 19993600 
+Progression : 15.00 % --> point n° : 20275200 
+Progression : 15.21 % --> point n° : 20556800 
+Progression : 15.42 % --> point n° : 20838400 
+Progression : 15.62 % --> point n° : 21120000 
+Progression : 15.83 % --> point n° : 21401600 
+Progression : 16.04 % --> point n° : 21683200 
+Progression : 16.25 % --> point n° : 21964800 
+Progression : 16.46 % --> point n° : 22246400 
+Progression : 16.67 % --> point n° : 22528000 
+Progression : 16.88 % --> point n° : 22809600 
+Progression : 17.08 % --> point n° : 23091200 
+Progression : 17.29 % --> point n° : 23372800 
+Progression : 17.50 % --> point n° : 23654400 
+Progression : 17.71 % --> point n° : 23936000 
+Progression : 17.92 % --> point n° : 24217600 
+Progression : 18.12 % --> point n° : 24499200 
+Progression : 18.33 % --> point n° : 24780800 
+Progression : 18.54 % --> point n° : 25062400 
+Progression : 18.75 % --> point n° : 25344000 
+Progression : 18.96 % --> point n° : 25625600 
+Progression : 19.17 % --> point n° : 25907200 
+Progression : 19.38 % --> point n° : 26188800 
+Progression : 19.58 % --> point n° : 26470400 
+Progression : 19.79 % --> point n° : 26752000 
+Progression : 20.00 % --> point n° : 27033600 
+Progression : 20.21 % --> point n° : 27315200 
+Progression : 20.42 % --> point n° : 27596800 
+Progression : 20.62 % --> point n° : 27878400 
+Progression : 20.83 % --> point n° : 28160000 
+Progression : 21.04 % --> point n° : 28441600 
+Progression : 21.25 % --> point n° : 28723200 
+Progression : 21.46 % --> point n° : 29004800 
+Progression : 21.67 % --> point n° : 29286400 
+Progression : 21.88 % --> point n° : 29568000 
+Progression : 22.08 % --> point n° : 29849600 
+Progression : 22.29 % --> point n° : 30131200 
+Progression : 22.50 % --> point n° : 30412800 
+Progression : 22.71 % --> point n° : 30694400 
+Progression : 22.92 % --> point n° : 30976000 
+Progression : 23.12 % --> point n° : 31257600 
+Progression : 23.33 % --> point n° : 31539200 
+Progression : 23.54 % --> point n° : 31820800 
+Progression : 23.75 % --> point n° : 32102400 
+Progression : 23.96 % --> point n° : 32384000 
+Progression : 24.17 % --> point n° : 32665600 
+Progression : 24.38 % --> point n° : 32947200 
+Progression : 24.58 % --> point n° : 33228800 
+Progression : 24.79 % --> point n° : 33510400 
+Progression : 25.00 % --> point n° : 33792000 
+Progression : 25.21 % --> point n° : 34073600 
+Progression : 25.42 % --> point n° : 34355200 
+Progression : 25.62 % --> point n° : 34636800 
+Progression : 25.83 % --> point n° : 34918400 
+Progression : 26.04 % --> point n° : 35200000 
+Progression : 26.25 % --> point n° : 35481600 
+Progression : 26.46 % --> point n° : 35763200 
+Progression : 26.67 % --> point n° : 36044800 
+Progression : 26.88 % --> point n° : 36326400 
+Progression : 27.08 % --> point n° : 36608000 
+Progression : 27.29 % --> point n° : 36889600 
+Progression : 27.50 % --> point n° : 37171200 
+Progression : 27.71 % --> point n° : 37452800 
+Progression : 27.92 % --> point n° : 37734400 
+Progression : 28.12 % --> point n° : 38016000 
+Progression : 28.33 % --> point n° : 38297600 
+Progression : 28.54 % --> point n° : 38579200 
+Progression : 28.75 % --> point n° : 38860800 
+Progression : 28.96 % --> point n° : 39142400 
+Progression : 29.17 % --> point n° : 39424000 
+Progression : 29.38 % --> point n° : 39705600 
+Progression : 29.58 % --> point n° : 39987200 
+Progression : 29.79 % --> point n° : 40268800 
+Progression : 30.00 % --> point n° : 40550400 
+Progression : 30.21 % --> point n° : 40832000 
+Progression : 30.42 % --> point n° : 41113600 
+Progression : 30.62 % --> point n° : 41395200 
+Progression : 30.83 % --> point n° : 41676800 
+Progression : 31.04 % --> point n° : 41958400 
+Progression : 31.25 % --> point n° : 42240000 
+Progression : 31.46 % --> point n° : 42521600 
+Progression : 31.67 % --> point n° : 42803200 
+Progression : 31.88 % --> point n° : 43084800 
+Progression : 32.08 % --> point n° : 43366400 
+Progression : 32.29 % --> point n° : 43648000 
+Progression : 32.50 % --> point n° : 43929600 
+Progression : 32.71 % --> point n° : 44211200 
+Progression : 32.92 % --> point n° : 44492800 
+Progression : 33.12 % --> point n° : 44774400 
+Progression : 33.33 % --> point n° : 45056000 
+Progression : 33.54 % --> point n° : 45337600 
+Progression : 33.75 % --> point n° : 45619200 
+Progression : 33.96 % --> point n° : 45900800 
+Progression : 34.17 % --> point n° : 46182400 
+Progression : 34.38 % --> point n° : 46464000 
+Progression : 34.58 % --> point n° : 46745600 
+Progression : 34.79 % --> point n° : 47027200 
+Progression : 35.00 % --> point n° : 47308800 
+Progression : 35.21 % --> point n° : 47590400 
+Progression : 35.42 % --> point n° : 47872000 
+Progression : 35.62 % --> point n° : 48153600 
+Progression : 35.83 % --> point n° : 48435200 
+Progression : 36.04 % --> point n° : 48716800 
+Progression : 36.25 % --> point n° : 48998400 
+Progression : 36.46 % --> point n° : 49280000 
+Progression : 36.67 % --> point n° : 49561600 
+Progression : 36.88 % --> point n° : 49843200 
+Progression : 37.08 % --> point n° : 50124800 
+Progression : 37.29 % --> point n° : 50406400 
+Progression : 37.50 % --> point n° : 50688000 
+Progression : 37.71 % --> point n° : 50969600 
+Progression : 37.92 % --> point n° : 51251200 
+Progression : 38.12 % --> point n° : 51532800 
+Progression : 38.33 % --> point n° : 51814400 
+Progression : 38.54 % --> point n° : 52096000 
+Progression : 38.75 % --> point n° : 52377600 
+Progression : 38.96 % --> point n° : 52659200 
+Progression : 39.17 % --> point n° : 52940800 
+Progression : 39.38 % --> point n° : 53222400 
+Progression : 39.58 % --> point n° : 53504000 
+Progression : 39.79 % --> point n° : 53785600 
+Progression : 40.00 % --> point n° : 54067200 
+Progression : 40.21 % --> point n° : 54348800 
+Progression : 40.42 % --> point n° : 54630400 
+Progression : 40.62 % --> point n° : 54912000 
+Progression : 40.83 % --> point n° : 55193600 
+Progression : 41.04 % --> point n° : 55475200 
+Progression : 41.25 % --> point n° : 55756800 
+Progression : 41.46 % --> point n° : 56038400 
+Progression : 41.67 % --> point n° : 56320000 
+Progression : 41.88 % --> point n° : 56601600 
+Progression : 42.08 % --> point n° : 56883200 
+Progression : 42.29 % --> point n° : 57164800 
+Progression : 42.50 % --> point n° : 57446400 
+Progression : 42.71 % --> point n° : 57728000 
+Progression : 42.92 % --> point n° : 58009600 
+Progression : 43.12 % --> point n° : 58291200 
+Progression : 43.33 % --> point n° : 58572800 
+Progression : 43.54 % --> point n° : 58854400 
+Progression : 43.75 % --> point n° : 59136000 
+Progression : 43.96 % --> point n° : 59417600 
+Progression : 44.17 % --> point n° : 59699200 
+Progression : 44.38 % --> point n° : 59980800 
+Progression : 44.58 % --> point n° : 60262400 
+Progression : 44.79 % --> point n° : 60544000 
+Progression : 45.00 % --> point n° : 60825600 
+Progression : 45.21 % --> point n° : 61107200 
+Progression : 45.42 % --> point n° : 61388800 
+Progression : 45.62 % --> point n° : 61670400 
+Progression : 45.83 % --> point n° : 61952000 
+Progression : 46.04 % --> point n° : 62233600 
+Progression : 46.25 % --> point n° : 62515200 
+Progression : 46.46 % --> point n° : 62796800 
+Progression : 46.67 % --> point n° : 63078400 
+Progression : 46.88 % --> point n° : 63360000 
+Progression : 47.08 % --> point n° : 63641600 
+Progression : 47.29 % --> point n° : 63923200 
+Progression : 47.50 % --> point n° : 64204800 
+Progression : 47.71 % --> point n° : 64486400 
+Progression : 47.92 % --> point n° : 64768000 
+Progression : 48.12 % --> point n° : 65049600 
+Progression : 48.33 % --> point n° : 65331200 
+Progression : 48.54 % --> point n° : 65612800 
+Progression : 48.75 % --> point n° : 65894400 
+Progression : 48.96 % --> point n° : 66176000 
+Progression : 49.17 % --> point n° : 66457600 
+Progression : 49.38 % --> point n° : 66739200 
+Progression : 49.58 % --> point n° : 67020800 
+Progression : 49.79 % --> point n° : 67302400 
+Progression : 50.00 % --> point n° : 67584000 
+Progression : 50.21 % --> point n° : 67865600 
+Progression : 50.42 % --> point n° : 68147200 
+Progression : 50.62 % --> point n° : 68428800 
+Progression : 50.83 % --> point n° : 68710400 
+Progression : 51.04 % --> point n° : 68992000 
+Progression : 51.25 % --> point n° : 69273600 
+Progression : 51.46 % --> point n° : 69555200 
+Progression : 51.67 % --> point n° : 69836800 
+Progression : 51.88 % --> point n° : 70118400 
+Progression : 52.08 % --> point n° : 70400000 
+Progression : 52.29 % --> point n° : 70681600 
+Progression : 52.50 % --> point n° : 70963200 
+Progression : 52.71 % --> point n° : 71244800 
+Progression : 52.92 % --> point n° : 71526400 
+Progression : 53.12 % --> point n° : 71808000 
+Progression : 53.33 % --> point n° : 72089600 
+Progression : 53.54 % --> point n° : 72371200 
+Progression : 53.75 % --> point n° : 72652800 
+Progression : 53.96 % --> point n° : 72934400 
+Progression : 54.17 % --> point n° : 73216000 
+Progression : 54.38 % --> point n° : 73497600 
+Progression : 54.58 % --> point n° : 73779200 
+Progression : 54.79 % --> point n° : 74060800 
+Progression : 55.00 % --> point n° : 74342400 
+Progression : 55.21 % --> point n° : 74624000 
+Progression : 55.42 % --> point n° : 74905600 
+Progression : 55.62 % --> point n° : 75187200 
+Progression : 55.83 % --> point n° : 75468800 
+Progression : 56.04 % --> point n° : 75750400 
+Progression : 56.25 % --> point n° : 76032000 
+Progression : 56.46 % --> point n° : 76313600 
+Progression : 56.67 % --> point n° : 76595200 
+Progression : 56.88 % --> point n° : 76876800 
+Progression : 57.08 % --> point n° : 77158400 
+Progression : 57.29 % --> point n° : 77440000 
+Progression : 57.50 % --> point n° : 77721600 
+Progression : 57.71 % --> point n° : 78003200 
+Progression : 57.92 % --> point n° : 78284800 
+Progression : 58.12 % --> point n° : 78566400 
+Progression : 58.33 % --> point n° : 78848000 
+Progression : 58.54 % --> point n° : 79129600 
+Progression : 58.75 % --> point n° : 79411200 
+Progression : 58.96 % --> point n° : 79692800 
+Progression : 59.17 % --> point n° : 79974400 
+Progression : 59.38 % --> point n° : 80256000 
+Progression : 59.58 % --> point n° : 80537600 
+Progression : 59.79 % --> point n° : 80819200 
+Progression : 60.00 % --> point n° : 81100800 
+Progression : 60.21 % --> point n° : 81382400 
+Progression : 60.42 % --> point n° : 81664000 
+Progression : 60.62 % --> point n° : 81945600 
+Progression : 60.83 % --> point n° : 82227200 
+Progression : 61.04 % --> point n° : 82508800 
+Progression : 61.25 % --> point n° : 82790400 
+Progression : 61.46 % --> point n° : 83072000 
+Progression : 61.67 % --> point n° : 83353600 
+Progression : 61.88 % --> point n° : 83635200 
+Progression : 62.08 % --> point n° : 83916800 
+Progression : 62.29 % --> point n° : 84198400 
+Progression : 62.50 % --> point n° : 84480000 
+Progression : 62.71 % --> point n° : 84761600 
+Progression : 62.92 % --> point n° : 85043200 
+Progression : 63.12 % --> point n° : 85324800 
+Progression : 63.33 % --> point n° : 85606400 
+Progression : 63.54 % --> point n° : 85888000 
+Progression : 63.75 % --> point n° : 86169600 
+Progression : 63.96 % --> point n° : 86451200 
+Progression : 64.17 % --> point n° : 86732800 
+Progression : 64.38 % --> point n° : 87014400 
+Progression : 64.58 % --> point n° : 87296000 
+Progression : 64.79 % --> point n° : 87577600 
+Progression : 65.00 % --> point n° : 87859200 
+Progression : 65.21 % --> point n° : 88140800 
+Progression : 65.42 % --> point n° : 88422400 
+Progression : 65.62 % --> point n° : 88704000 
+Progression : 65.83 % --> point n° : 88985600 
+Progression : 66.04 % --> point n° : 89267200 
+Progression : 66.25 % --> point n° : 89548800 
+Progression : 66.46 % --> point n° : 89830400 
+Progression : 66.67 % --> point n° : 90112000 
+Progression : 66.88 % --> point n° : 90393600 
+Progression : 67.08 % --> point n° : 90675200 
+Progression : 67.29 % --> point n° : 90956800 
+Progression : 67.50 % --> point n° : 91238400 
+Progression : 67.71 % --> point n° : 91520000 
+Progression : 67.92 % --> point n° : 91801600 
+Progression : 68.12 % --> point n° : 92083200 
+Progression : 68.33 % --> point n° : 92364800 
+Progression : 68.54 % --> point n° : 92646400 
+Progression : 68.75 % --> point n° : 92928000 
+Progression : 68.96 % --> point n° : 93209600 
+Progression : 69.17 % --> point n° : 93491200 
+Progression : 69.38 % --> point n° : 93772800 
+Progression : 69.58 % --> point n° : 94054400 
+Progression : 69.79 % --> point n° : 94336000 
+Progression : 70.00 % --> point n° : 94617600 
+Progression : 70.21 % --> point n° : 94899200 
+Progression : 70.42 % --> point n° : 95180800 
+Progression : 70.62 % --> point n° : 95462400 
+Progression : 70.83 % --> point n° : 95744000 
+Progression : 71.04 % --> point n° : 96025600 
+Progression : 71.25 % --> point n° : 96307200 
+Progression : 71.46 % --> point n° : 96588800 
+Progression : 71.67 % --> point n° : 96870400 
+Progression : 71.88 % --> point n° : 97152000 
+Progression : 72.08 % --> point n° : 97433600 
+Progression : 72.29 % --> point n° : 97715200 
+Progression : 72.50 % --> point n° : 97996800 
+Progression : 72.71 % --> point n° : 98278400 
+Progression : 72.92 % --> point n° : 98560000 
+Progression : 73.12 % --> point n° : 98841600 
+Progression : 73.33 % --> point n° : 99123200 
+Progression : 73.54 % --> point n° : 99404800 
+Progression : 73.75 % --> point n° : 99686400 
+Progression : 73.96 % --> point n° : 99968000 
+Progression : 74.17 % --> point n° : 100249600 
+Progression : 74.38 % --> point n° : 100531200 
+Progression : 74.58 % --> point n° : 100812800 
+Progression : 74.79 % --> point n° : 101094400 
+Progression : 75.00 % --> point n° : 101376000 
+Progression : 75.21 % --> point n° : 101657600 
+Progression : 75.42 % --> point n° : 101939200 
+Progression : 75.62 % --> point n° : 102220800 
+Progression : 75.83 % --> point n° : 102502400 
+Progression : 76.04 % --> point n° : 102784000 
+Progression : 76.25 % --> point n° : 103065600 
+Progression : 76.46 % --> point n° : 103347200 
+Progression : 76.67 % --> point n° : 103628800 
+Progression : 76.88 % --> point n° : 103910400 
+Progression : 77.08 % --> point n° : 104192000 
+Progression : 77.29 % --> point n° : 104473600 
+Progression : 77.50 % --> point n° : 104755200 
+Progression : 77.71 % --> point n° : 105036800 
+Progression : 77.92 % --> point n° : 105318400 
+Progression : 78.12 % --> point n° : 105600000 
+Progression : 78.33 % --> point n° : 105881600 
+Progression : 78.54 % --> point n° : 106163200 
+Progression : 78.75 % --> point n° : 106444800 
+Progression : 78.96 % --> point n° : 106726400 
+Progression : 79.17 % --> point n° : 107008000 
+Progression : 79.38 % --> point n° : 107289600 
+Progression : 79.58 % --> point n° : 107571200 
+Progression : 79.79 % --> point n° : 107852800 
+Progression : 80.00 % --> point n° : 108134400 
+Progression : 80.21 % --> point n° : 108416000 
+Progression : 80.42 % --> point n° : 108697600 
+Progression : 80.62 % --> point n° : 108979200 
+Progression : 80.83 % --> point n° : 109260800 
+Progression : 81.04 % --> point n° : 109542400 
+Progression : 81.25 % --> point n° : 109824000 
+Progression : 81.46 % --> point n° : 110105600 
+Progression : 81.67 % --> point n° : 110387200 
+Progression : 81.88 % --> point n° : 110668800 
+Progression : 82.08 % --> point n° : 110950400 
+Progression : 82.29 % --> point n° : 111232000 
+Progression : 82.50 % --> point n° : 111513600 
+Progression : 82.71 % --> point n° : 111795200 
+Progression : 82.92 % --> point n° : 112076800 
+Progression : 83.12 % --> point n° : 112358400 
+Progression : 83.33 % --> point n° : 112640000 
+Progression : 83.54 % --> point n° : 112921600 
+Progression : 83.75 % --> point n° : 113203200 
+Progression : 83.96 % --> point n° : 113484800 
+Progression : 84.17 % --> point n° : 113766400 
+Progression : 84.38 % --> point n° : 114048000 
+Progression : 84.58 % --> point n° : 114329600 
+Progression : 84.79 % --> point n° : 114611200 
+Progression : 85.00 % --> point n° : 114892800 
+Progression : 85.21 % --> point n° : 115174400 
+Progression : 85.42 % --> point n° : 115456000 
+Progression : 85.62 % --> point n° : 115737600 
+Progression : 85.83 % --> point n° : 116019200 
+Progression : 86.04 % --> point n° : 116300800 
+Progression : 86.25 % --> point n° : 116582400 
+Progression : 86.46 % --> point n° : 116864000 
+Progression : 86.67 % --> point n° : 117145600 
+Progression : 86.88 % --> point n° : 117427200 
+Progression : 87.08 % --> point n° : 117708800 
+Progression : 87.29 % --> point n° : 117990400 
+Progression : 87.50 % --> point n° : 118272000 
+Progression : 87.71 % --> point n° : 118553600 
+Progression : 87.92 % --> point n° : 118835200 
+Progression : 88.12 % --> point n° : 119116800 
+Progression : 88.33 % --> point n° : 119398400 
+Progression : 88.54 % --> point n° : 119680000 
+Progression : 88.75 % --> point n° : 119961600 
+Progression : 88.96 % --> point n° : 120243200 
+Progression : 89.17 % --> point n° : 120524800 
+Progression : 89.38 % --> point n° : 120806400 
+Progression : 89.58 % --> point n° : 121088000 
+Progression : 89.79 % --> point n° : 121369600 
+Progression : 90.00 % --> point n° : 121651200 
+Progression : 90.21 % --> point n° : 121932800 
+Progression : 90.42 % --> point n° : 122214400 
+Progression : 90.62 % --> point n° : 122496000 
+Progression : 90.83 % --> point n° : 122777600 
+Progression : 91.04 % --> point n° : 123059200 
+Progression : 91.25 % --> point n° : 123340800 
+Progression : 91.46 % --> point n° : 123622400 
+Progression : 91.67 % --> point n° : 123904000 
+IV) CC points projection on the sky plane
+V) Voxelling 
+Meshing the sky plane...
+Sampling projected data on the sky plane grid...
+Computing volume PV...
+Computing total mass PV...
+Computing ism mass PV...
+Computing jet mass PV...
+Computing box masses PV for 0.00e+00_infEq_x_infEq_1.00e+16,0.00e+00_infEq_y_infEq_1.45e+17 ...
+Computing box ISM masses PV for 0.00e+00_infEq_x_infEq_1.00e+16,0.00e+00_infEq_y_infEq_1.45e+17 ...
+Computing box JET masses PV for 0.00e+00_infEq_x_infEq_1.00e+16,0.00e+00_infEq_y_infEq_1.45e+17 ...
+Computing box masses PV for 0.00e+00_infEq_x_infEq_2.00e+16,0.00e+00_infEq_y_infEq_1.45e+17 ...
+Computing box ISM masses PV for 0.00e+00_infEq_x_infEq_2.00e+16,0.00e+00_infEq_y_infEq_1.45e+17 ...
+Computing box JET masses PV for 0.00e+00_infEq_x_infEq_2.00e+16,0.00e+00_infEq_y_infEq_1.45e+17 ...
+Computing ism floored mass PV...
+Computing jet floored mass PV...
+Progression : 91.88 % --> point n° : 124185600 
+Progression : 92.08 % --> point n° : 124467200 
+Progression : 92.29 % --> point n° : 124748800 
+Progression : 92.50 % --> point n° : 125030400 
+Progression : 92.71 % --> point n° : 125312000 
+Progression : 92.92 % --> point n° : 125593600 
+Progression : 93.12 % --> point n° : 125875200 
+Progression : 93.33 % --> point n° : 126156800 
+Progression : 93.54 % --> point n° : 126438400 
+Progression : 93.75 % --> point n° : 126720000 
+Progression : 93.96 % --> point n° : 127001600 
+Progression : 94.17 % --> point n° : 127283200 
+Progression : 94.38 % --> point n° : 127564800 
+Progression : 94.58 % --> point n° : 127846400 
+Progression : 94.79 % --> point n° : 128128000 
+Progression : 95.00 % --> point n° : 128409600 
+Progression : 95.21 % --> point n° : 128691200 
+Progression : 95.42 % --> point n° : 128972800 
+Progression : 95.62 % --> point n° : 129254400 
+Progression : 95.83 % --> point n° : 129536000 
+Progression : 96.04 % --> point n° : 129817600 
+Progression : 96.25 % --> point n° : 130099200 
+Progression : 96.46 % --> point n° : 130380800 
+Progression : 96.67 % --> point n° : 130662400 
+Progression : 96.88 % --> point n° : 130944000 
+Progression : 97.08 % --> point n° : 131225600 
+Progression : 97.29 % --> point n° : 131507200 
+Progression : 97.50 % --> point n° : 131788800 
+Progression : 97.71 % --> point n° : 132070400 
+Progression : 97.92 % --> point n° : 132352000 
+Progression : 98.12 % --> point n° : 132633600 
+Progression : 98.33 % --> point n° : 132915200 
+Progression : 98.54 % --> point n° : 133196800 
+Progression : 98.75 % --> point n° : 133478400 
+Progression : 98.96 % --> point n° : 133760000 
+Progression : 99.17 % --> point n° : 134041600 
+Progression : 99.38 % --> point n° : 134323200 
+Progression : 99.58 % --> point n° : 134604800 
+Progression : 99.79 % --> point n° : 134886400 
+                                               
+Progression : Finished.... 100 %
+number of 3D points = 135168000
+
+Minimal mass found : 1.3835464173639044e-19 solMass
+Maximal mass found : 7.915756797537656e-10 solMass
+v_X/Y/Z_min =  -6.805318528215131e+16 -6330528863455936.0 -10000000.0
+X/Y/Z_min =  -6.805318528215131e+16 -6330528863455936.0 -10000000.0
+v_X/Y/Z_max =  6.805318528215131e+16 1.8833323368781533e+17 15000000.0
+X/Y/Z_max =  6.805318528215131e+16 1.8833323368781533e+17 15000000.0
+dx,dy,dz =  1582632215863984.0 1582632215863984.0 100000.0
+Progression (in %): Finishing... 100 % 
+srun: error: tycho63: task 0: Exited with exit code 1
+/bin/cp: -r not specified; omitting directory './test'

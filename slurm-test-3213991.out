@@ -1,0 +1,16 @@
+/bin/cp: cannot stat '/obs/mrabenanahary/Post-Traitement/geoCompiler_v2/test_input.par': No such file or directory
+srun: error: tycho63: task 0: Exited with exit code 1
+/bin/cp: cannot stat '/obs/mrabenanahary/Post-Traitement/geoCompiler_v2/*.py': No such file or directory
+srun: error: tycho63: task 0: Exited with exit code 1
+/bin/cp: cannot stat '/obs/mrabenanahary/Post-Traitement/geoCompiler_v2/Jet_CC_Shang06_0296.vtu': No such file or directory
+srun: error: tycho63: task 0: Exited with exit code 1
+3213991
+tycho63
+/scratch/mrabenanahary/run.3213991.test
+more: stat of test_input.par failed: No such file or directory
+/usr/bin/python3: can't open file 'geoCompiler.py': [Errno 2] No such file or directory
+srun: error: tycho63: task 0: Exited with exit code 2
+/bin/mv: cannot stat './test'srun: error: tycho63: task 0: Exited with exit code 1
+: No such file or directory
+/bin/cp: cannot stat '/obs/mrabenanahary/Post-Traitement/geoCompiler_v2/slurm-test-3213991.out': No such file or directory
+srun: error: tycho63: task 0: Exited with exit code 1
